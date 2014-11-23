@@ -1,825 +1,698 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+	<title>DAE-ITESMCCV</title>
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link href="assets/css/main2.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/icomoon.css">
+  <link href="assets/css/animate-custom.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
 
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-	
-    <title>DAE-ITESMCCV</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/icomoon.css">
-    <link href="assets/css/animate-custom.css" rel="stylesheet">
-
-
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-  
-
-
-  
-  	<div id="navbar-main">
-      <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-accessibility" style="font-size:30px; color:#3498db;"></span>
-          </button>
-          
-          <a class="navbar-brand hidden-xs hidden-sm" href="#home" ><span class="icon icon-accessibility" style="font-size:18px; color:#3498db;"					></span></a>
-        </div>
-        
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#home" class="smoothScroll">Home</a></li>
-            <li><a href="#reportes" class="smoothScroll">Reportes</a></li>
-             <li><a href="#puntaje" class="smoothScroll">Sistema de Puntaje</a></li>
-
-		<li><a class="navbar-brand hidden-xs hidden-sm" href="logout_admin.php" ><span class="icon icon-exit" style="font-size:15px; color:#3498db;"> Cerrar Sesión</span></a></li>
-        </div><!--/.nav-collapse -->
-		
-		
-		
-      </div>
-    </div>
-    </div>
-
-  
-  
-		<!-- ==== HEADERWRAP ==== -->
-	    <div id="headerwrap" id="home" name="home"> <!-- Imagen central en id headerwrap -->
-			<header class="clearfix">
-	  		 
-        			<!-- ==== PORTFOLIO ==== -->
-		<div class="container" id="portfolio" name="portfolio">
-		
-			<div class="row">
-				<h2>DAE |<small>Sistema de Validación de Logros-Actvidades</small></h2>
-				<hr>
-				
-				<br>
-			</div><!-- /row -->
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+	<div id="navbar-main">
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
-			<div class="row">	
-			
-				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/img_grupos.png" alt="">
-							<figcaption>
-								<h5>Grupos Estudiantiles</h5>
-								<a data-toggle="modal" href="#myModalgrupos" class="btn btn-primary btn-lg">Validar</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-                
-				<!-- data-toggle="modal"-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-accessibility" style="font-size:30px; color:#3498db;"></span>
+					</button>
 
-				<!-- MODAL Imagen 1 grupos -->
-						      
-						  <div class="modal fade" id="myModalgrupos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Formacion Social</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/img_grupos.png" alt=""></p>
-                                  					<h2>Validación |<small>Grupos Estudiantiles</small></h2><br>
+					<a class="navbar-brand hidden-xs hidden-sm" href="#home" ><span class="icon icon-accessibility" style="font-size:18px; color:#3498db;"					></span></a>
+				</div>
 
-								        
-								  
-								  <div class="modal-body" style="padding-top:  1em;">
-								    <div class="table-responsive">
-								    <table class="table table-striped table-condensed table-hover">
-								    <thead>
-								    <tr>
-								    <th>ID</th>
-								    <th>Alumno</th>
-								    <th>Tipo</th>
-								    <th>Nombre</th>
-								    <th></th>
-								    <th></th>
-								    </tr>
-								    </thead>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#home" class="smoothScroll">Home</a></li>
+						<li><a href="#reportes" class="smoothScroll">Reportes</a></li>
+						<li><a href="#puntaje" class="smoothScroll">Sistema de Puntaje</a></li>
+						<li><a class="navbar-brand hidden-xs hidden-sm" href="logout_admin.php" ><span class="icon icon-exit" style="font-size:15px; color:#3498db;"> Cerrar Sesión</span></a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
 
+	<!-- ==== HEADERWRAP ==== -->
+	<div id="headerwrap" id="home" name="home"> <!-- Imagen central en id headerwrap -->
+		<header class="clearfix">
 
-								    <tbody>
-								    <tr class="warning">
-								    <td><a href="#myModalgrupos">3996226_1</a></td>
-								    <td>Durán</td>
-								    <td>Congreso C13</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-				
-								    </tr>
-								    
-								      <tr class="warning">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Aurioles</td>
-								    <td>Prevención padres Jóvenes</td>
-								    <td>El programa de prevención ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								   
-								    
-								    </tr>
+			<!-- ==== PORTFOLIO ==== -->
+			<div class="container" id="portfolio" name="portfolio">
 
+				<div class="row">
+					<br /><br />
+					<h2>DAE |<small>Sistema de Validación de Logros-Actvidades</small></h2>
+					<hr>
+					<br>
+				</div><!-- /row -->
+				<div class="container">
+					<div class="row">	
 
-								    <tr class="warning">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Franco</td>
-								    <td>Congreso C14</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								    
-								    </tr>
+						<!-- PORTFOLIO IMAGE 1 -->
+						<div class="col-md-4 ">
+							<div class="grid mask">
+								<figure>
+									<img class="img-responsive" src="assets/img/portfolio/img_grupos.png" alt="">
+									<figcaption>
+										<h5>Grupos Estudiantiles</h5>
+										<a data-toggle="modal" href="#myModalgrupos" class="btn btn-primary btn-lg">Validar</a>
+									</figcaption><!-- /figcaption -->
+								</figure><!-- /figure -->
+							</div><!-- /grid-mask -->
+						</div><!-- /col -->
 
-								    <tr class="warning">
-								    <td><a href="#myModalgrupos">3996226_3</a></td>
-								    <td>Reyes</td>
-								    <td>Fútbol Soccer</td>
-								    <td>El equipo representativo ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								  
-								    </tr>
+						<!-- data-toggle="modal"-->
 
+						<!-- MODAL Imagen 1 grupos -->
+						<div class="modal fade" id="myModalgrupos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Formacion Social</h4>
+									</div>
+									<div class="modal-body">
+										<p><img class="img-responsive" src="assets/img/portfolio/img_grupos.png" alt=""></p>
+										<h2>Validación |<small>Grupos Estudiantiles</small></h2><br>
 
-								    <tr class="warning">
-								    <td><a href="#myModalgrupos">3996226_4</a></td>
-								    <td>Alor</td>
-								    <td>SATI</td>
-								    <td>La mesa de tecnológías ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								 
-								   
-								    </tr>
+										<div class="modal-body" style="padding-top:  1em;">
+											<div class="table-responsive">
+												<table class="table table-striped table-condensed table-hover">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th>Alumno</th>
+															<th>Tipo</th>
+															<th>Nombre</th>
+															<th></th>
+															<th></th>
+														</tr>
+													</thead>
 
-								    <tr class="warning">
-								    <td><a href="#myModalgrupos">3996226_5</a></td>
-								    <td>Martínez</td>
-								    <td>Mecatrónica</td>
-								    <td>El diplomado en mecatrónica ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								
-								    
-								    </tr>
+													<tbody>
+														<tr class="warning">
+															<td><a href="#myModalgrupos">3996226_1</a></td>
+															<td>Durán</td>
+															<td>Congreso C13</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    </tbody>
-								    </table>
-								    </div>
-								    </div>
-								    <br><br><br>
+														<tr class="warning">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Aurioles</td>
+															<td>Prevención padres Jóvenes</td>
+															<td>El programa de prevención ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-													                                  
-						        </div>
+														<tr class="warning">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Franco</td>
+															<td>Congreso C14</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div>
-                          
-                          <!-- Fin de modal -->
-                
-				
-						
-				<!-- PORTFOLIO IMAGE 2 Difusion-->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/img_difusion.png" alt="">
-							<figcaption>
-								<h5>Difusión Cultural</h5>
-								<a data-toggle="modal" href="#myModaldifusion" class="btn btn-primary btn-lg">Validar</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-                
-                						 <!-- MODAL IMAGEN 2 -->
-						      
-						  <div class="modal fade" id="myModaldifusion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Difusión Cultural</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/img_difusion.png" alt=""></p>
-                                  					<h2>Validación |<small>Difusión</small></h2><br>
+														<tr class="warning">
+															<td><a href="#myModalgrupos">3996226_3</a></td>
+															<td>Reyes</td>
+															<td>Fútbol Soccer</td>
+															<td>El equipo representativo ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
+														<tr class="warning">
+															<td><a href="#myModalgrupos">3996226_4</a></td>
+															<td>Alor</td>
+															<td>SATI</td>
+															<td>La mesa de tecnológías ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								   <div class="modal-body" style="padding-top:  1em;">
-								    <div class="table-responsive">
-								    <table class="table table-striped table-condensed table-hover">
-								    <thead>
-								    <tr>
-								    <th>ID</th>
-								    <th>Alumno</th>
-								    <th>Tipo</th>
-								    <th>Nombre</th>
-								    <th></th>
-								    <th></th>
-								    </tr>
-								    </thead>
+														<tr class="warning">
+															<td><a href="#myModalgrupos">3996226_5</a></td>
+															<td>Martínez</td>
+															<td>Mecatrónica</td>
+															<td>El diplomado en mecatrónica ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<br><br><br>
+									</div>
 
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+									</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div>
+						<!-- Fin de modal -->
 
-								    <tbody>
-								    <tr class="danger">
-								    <td><a href="#myModalgrupos">3996226_1</a></td>
-								    <td>Durán</td>
-								    <td>Congreso C13</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-				
-								    </tr>
-								    
-								      <tr class="danger">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Aurioles</td>
-								    <td>Prevención padres Jóvenes</td>
-								    <td>El programa de prevención ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								   
-								    
-								    </tr>
+						<!-- PORTFOLIO IMAGE 2 Difusion-->
+						<div class="col-md-4">
+							<div class="grid mask">
+								<figure>
+									<img class="img-responsive" src="assets/img/portfolio/img_difusion.png" alt="">
+									<figcaption>
+										<h5>Difusión Cultural</h5>
+										<a data-toggle="modal" href="#myModaldifusion" class="btn btn-primary btn-lg">Validar</a>
+									</figcaption><!-- /figcaption -->
+								</figure><!-- /figure -->
+							</div><!-- /grid-mask -->
+						</div><!-- /col -->
 
+						<!-- MODAL IMAGEN 2 -->
+						<div class="modal fade" id="myModaldifusion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Difusión Cultural</h4>
+									</div>
+									<div class="modal-body">
+										<p><img class="img-responsive" src="assets/img/portfolio/img_difusion.png" alt=""></p>
+										<h2>Validación |<small>Difusión</small></h2><br>
 
-								    <tr class="danger">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Franco</td>
-								    <td>Congreso C14</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								    
-								    </tr>
+										<div class="modal-body" style="padding-top:  1em;">
+											<div class="table-responsive">
+												<table class="table table-striped table-condensed table-hover">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th>Alumno</th>
+															<th>Tipo</th>
+															<th>Nombre</th>
+															<th></th>
+															<th></th>
+														</tr>
+													</thead>
 
-								    <tr class="danger">
-								    <td><a href="#myModalgrupos">3996226_3</a></td>
-								    <td>Reyes</td>
-								    <td>Fútbol Soccer</td>
-								    <td>El equipo representativo ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								  
-								    </tr>
+													<tbody>
+														<tr class="danger">
+															<td><a href="#myModalgrupos">3996226_1</a></td>
+															<td>Durán</td>
+															<td>Congreso C13</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
+														<tr class="danger">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Aurioles</td>
+															<td>Prevención padres Jóvenes</td>
+															<td>El programa de prevención ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="danger">
-								    <td><a href="#myModalgrupos">3996226_4</a></td>
-								    <td>Alor</td>
-								    <td>SATI</td>
-								    <td>La mesa de tecnológías ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								 
-								   
-								    </tr>
+														<tr class="danger">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Franco</td>
+															<td>Congreso C14</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="danger">
-								    <td><a href="#myModalgrupos">3996226_5</a></td>
-								    <td>Martínez</td>
-								    <td>Mecatrónica</td>
-								    <td>El diplomado en mecatrónica ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								
-								    
-								    </tr>
+														<tr class="danger">
+															<td><a href="#myModalgrupos">3996226_3</a></td>
+															<td>Reyes</td>
+															<td>Fútbol Soccer</td>
+															<td>El equipo representativo ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    </tbody>
-								    </table>
-								    </div>
-								    </div>
-								    <br><br><br>
-                                  
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div>
-                          
-                          <!-- Fin de modal -->
-                
-				
-				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/img_deportes.png" alt="">
-							<figcaption>
-								<h5>Deportes</h5>
-								<a data-toggle="modal" href="#myModaldeportes" class="btn btn-primary btn-lg">Validar</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-            
-            
-            						 <!-- MODAL Imagen 3 Deportes-->
-						      
-						  <div class="modal fade" id="myModaldeportes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Deportes</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio//img_deportes.png" alt=""></p>
-                                  					<h2>Validación |<small>Deportes</small></h2><br>
+														<tr class="danger">
+															<td><a href="#myModalgrupos">3996226_4</a></td>
+															<td>Alor</td>
+															<td>SATI</td>
+															<td>La mesa de tecnológías ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
+														<tr class="danger">
+															<td><a href="#myModalgrupos">3996226_5</a></td>
+															<td>Martínez</td>
+															<td>Mecatrónica</td>
+															<td>El diplomado en mecatrónica ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<br><br><br>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+									</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div>
+						<!-- Fin de modal -->
 
-    
- <div class="modal-body" style="padding-top:  1em;">
-								    <div class="table-responsive">
-								    <table class="table table-striped table-condensed table-hover">
-								    <thead>
-								    <tr>
-								    <th>ID</th>
-								    <th>Alumno</th>
-								    <th>Tipo</th>
-								    <th>Nombre</th>
-								    <th></th>
-								    <th></th>
-								    </tr>
-								    </thead>
+						<!-- PORTFOLIO IMAGE 3 -->
+						<div class="col-md-4">
+							<div class="grid mask">
+								<figure>
+									<img class="img-responsive" src="assets/img/portfolio/img_deportes.png" alt="">
+									<figcaption>
+										<h5>Deportes</h5>
+										<a data-toggle="modal" href="#myModaldeportes" class="btn btn-primary btn-lg">Validar</a>
+									</figcaption><!-- /figcaption -->
+								</figure><!-- /figure -->
+							</div><!-- /grid-mask -->
+						</div><!-- /col -->
 
+						<!-- MODAL Imagen 3 Deportes-->
+						<div class="modal fade" id="myModaldeportes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Deportes</h4>
+									</div>
+									<div class="modal-body">
+										<p><img class="img-responsive" src="assets/img/portfolio//img_deportes.png" alt=""></p>
+										<h2>Validación |<small>Deportes</small></h2><br>
 
-								    <tbody>
-								    <tr class="active">
-								    <td><a href="#myModalgrupos">3996226_1</a></td>
-								    <td>Durán</td>
-								    <td>Congreso C13</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-				
-								    </tr>
-								    
-								      <tr class="active">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Aurioles</td>
-								    <td>Prevención padres Jóvenes</td>
-								    <td>El programa de prevención ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								   
-								    
-								    </tr>
+										<div class="modal-body" style="padding-top:  1em;">
+											<div class="table-responsive">
+												<table class="table table-striped table-condensed table-hover">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th>Alumno</th>
+															<th>Tipo</th>
+															<th>Nombre</th>
+															<th></th>
+															<th></th>
+														</tr>
+													</thead>
 
+													<tbody>
+														<tr class="active">
+															<td><a href="#myModalgrupos">3996226_1</a></td>
+															<td>Durán</td>
+															<td>Congreso C13</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="active">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Franco</td>
-								    <td>Congreso C14</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								    
-								    </tr>
+														<tr class="active">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Aurioles</td>
+															<td>Prevención padres Jóvenes</td>
+															<td>El programa de prevención ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="active">
-								    <td><a href="#myModalgrupos">3996226_3</a></td>
-								    <td>Reyes</td>
-								    <td>Fútbol Soccer</td>
-								    <td>El equipo representativo ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								  
-								    </tr>
+														<tr class="active">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Franco</td>
+															<td>Congreso C14</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
+														<tr class="active">
+															<td><a href="#myModalgrupos">3996226_3</a></td>
+															<td>Reyes</td>
+															<td>Fútbol Soccer</td>
+															<td>El equipo representativo ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="active">
-								    <td><a href="#myModalgrupos">3996226_4</a></td>
-								    <td>Alor</td>
-								    <td>SATI</td>
-								    <td>La mesa de tecnológías ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								 
-								   
-								    </tr>
+														<tr class="active">
+															<td><a href="#myModalgrupos">3996226_4</a></td>
+															<td>Alor</td>
+															<td>SATI</td>
+															<td>La mesa de tecnológías ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="active">
-								    <td><a href="#myModalgrupos">3996226_5</a></td>
-								    <td>Martínez</td>
-								    <td>Mecatrónica</td>
-								    <td>El diplomado en mecatrónica ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								
-								    
-								    </tr>
+														<tr class="active">
+															<td><a href="#myModalgrupos">3996226_5</a></td>
+															<td>Martínez</td>
+															<td>Mecatrónica</td>
+															<td>El diplomado en mecatrónica ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<br><br><br>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+									</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div>
+						<!-- /.modal -->
+					</div><!-- /row -->
 
-								    </tbody>
-								    </table>
-								    </div>
-								    </div>
-								    <br><br><br>
-                                    
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div>
-                            <!-- /.modal -->
+					<div class="row">
 
-				<!-- PORTFOLIO IMAGE 4  Prevencion-->
-			<div class="row">	
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/img_prevencion.png" alt="">
-							<figcaption>
-								<h5>Prevención</h5>
-								<a data-toggle="modal" href="#myModalprevencion" class="btn btn-primary btn-lg">Validar</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-                
-                            						 <!-- MODAL Imagen 4 Prevencion -->
-						      
-						  <div class="modal fade" id="myModalprevencion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Programa de Prevencion</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/img_prevencion.png" alt=""></p>
-                                  					<h2>Validación |<small>Prevención</small></h2><br>
+						<!-- PORTFOLIO IMAGE 4  Prevencion-->
+						<div class="col-md-4 ">
+							<div class="grid mask">
+								<figure>
+									<img class="img-responsive" src="assets/img/portfolio/img_prevencion.png" alt="">
+									<figcaption>
+										<h5>Prevención</h5>
+										<a data-toggle="modal" href="#myModalprevencion" class="btn btn-primary btn-lg">Validar</a>
+									</figcaption><!-- /figcaption -->
+								</figure><!-- /figure -->
+							</div><!-- /grid-mask -->
+						</div><!-- /col -->
 
-                                 
-    
-   <div class="modal-body" style="padding-top:  1em;">
-								    <div class="table-responsive">
-								    <table class="table table-striped table-condensed table-hover">
-								    <thead>
-								    <tr>
-								    <th>ID</th>
-								    <th>Alumno</th>
-								    <th>Tipo</th>
-								    <th>Nombre</th>
-								    <th></th>
-								    <th></th>
-								    </tr>
-								    </thead>
+						<!-- MODAL Imagen 4 Prevencion -->
+						<div class="modal fade" id="myModalprevencion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Programa de Prevencion</h4>
+									</div>
+									<div class="modal-body">
+										<p><img class="img-responsive" src="assets/img/portfolio/img_prevencion.png" alt=""></p>
+										<h2>Validación |<small>Prevención</small></h2><br>
 
+										<div class="modal-body" style="padding-top:  1em;">
+											<div class="table-responsive">
+												<table class="table table-striped table-condensed table-hover">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th>Alumno</th>
+															<th>Tipo</th>
+															<th>Nombre</th>
+															<th></th>
+															<th></th>
+														</tr>
+													</thead>
 
-								    <tbody>
-								    <tr class="success">
-								    <td><a href="#myModalgrupos">3996226_1</a></td>
-								    <td>Durán</td>
-								    <td>Congreso C13</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-				
-								    </tr>
-								    
-								      <tr class="success">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Aurioles</td>
-								    <td>Prevención padres Jóvenes</td>
-								    <td>El programa de prevención ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								   
-								    
-								    </tr>
+													<tbody>
+														<tr class="success">
+															<td><a href="#myModalgrupos">3996226_1</a></td>
+															<td>Durán</td>
+															<td>Congreso C13</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
+														<tr class="success">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Aurioles</td>
+															<td>Prevención padres Jóvenes</td>
+															<td>El programa de prevención ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="success">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Franco</td>
-								    <td>Congreso C14</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								    
-								    </tr>
+														<tr class="success">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Franco</td>
+															<td>Congreso C14</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="success">
-								    <td><a href="#myModalgrupos">3996226_3</a></td>
-								    <td>Reyes</td>
-								    <td>Fútbol Soccer</td>
-								    <td>El equipo representativo ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								  
-								    </tr>
+														<tr class="success">
+															<td><a href="#myModalgrupos">3996226_3</a></td>
+															<td>Reyes</td>
+															<td>Fútbol Soccer</td>
+															<td>El equipo representativo ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
+														<tr class="success">
+															<td><a href="#myModalgrupos">3996226_4</a></td>
+															<td>Alor</td>
+															<td>SATI</td>
+															<td>La mesa de tecnológías ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
-								    <tr class="success">
-								    <td><a href="#myModalgrupos">3996226_4</a></td>
-								    <td>Alor</td>
-								    <td>SATI</td>
-								    <td>La mesa de tecnológías ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								 
-								   
-								    </tr>
+														<tr class="success">
+															<td><a href="#myModalgrupos">3996226_5</a></td>
+															<td>Martínez</td>
+															<td>Mecatrónica</td>
+															<td>El diplomado en mecatrónica ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<br><br><br>
+									</div>
 
-								    <tr class="success">
-								    <td><a href="#myModalgrupos">3996226_5</a></td>
-								    <td>Martínez</td>
-								    <td>Mecatrónica</td>
-								    <td>El diplomado en mecatrónica ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								
-								    
-								    </tr>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+									</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div>
+						<!-- /.modal -->
 
-								    </tbody>
-								    </table>
-								    </div>
-								    </div>
-								    <br><br><br>
-                                    
-                                  </div>
+						<!-- PORTFOLIO IMAGE 5 formacion social-->
+						<div class="col-md-4">
+							<div class="grid mask">
+								<figure>
+									<img class="img-responsive" src="assets/img/portfolio/img_formacion.png" alt="">
+									<figcaption>
+										<h5>Formación Social</h5>
+										<a data-toggle="modal" href="#myModalformacion" class="btn btn-primary btn-lg">Validar</a>
+									</figcaption><!-- /figcaption -->
+								</figure><!-- /figure -->
+							</div><!-- /grid-mask -->
+						</div><!-- /col -->
 
+						<!-- MODAL Imagen 5 formacion -->
+						<div class="modal fade" id="myModalformacion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Formación Social</h4>
+									</div>
+									<div class="modal-body">
+										<p><img class="img-responsive" src="assets/img/portfolio/img_formacion.png" alt=""></p>
+										<h2>Validación |<small>Formación</small></h2><br>
 
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div>
-                            <!-- /.modal -->
-                
-                
-				
-				<!-- PORTFOLIO IMAGE 5 formacion social-->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/img_formacion.png" alt="">
-							<figcaption>
-								<h5>Formación Social</h5>
-								<a data-toggle="modal" href="#myModalformacion" class="btn btn-primary btn-lg">Validar</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-                
-                            						 <!-- MODAL Imagen 5 formacion -->
-						      
-						  <div class="modal fade" id="myModalformacion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Formación Social</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/img_formacion.png" alt=""></p>
-                                  					<h2>Validación |<small>Formación</small></h2><br>
+										<div class="modal-body" style="padding-top:  1em;">
+											<div class="table-responsive">
+												<table class="table table-striped table-condensed table-hover">
+													<thead>
+														<tr>
+															<th>ID</th>
+															<th>Alumno</th>
+															<th>Tipo</th>
+															<th>Nombre</th>
+															<th></th>
+															<th></th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr class="default">
+															<td><a href="#myModalgrupos">3996226_1</a></td>
+															<td>Durán</td>
+															<td>Congreso C13</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
+
+														<tr class="default">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Aurioles</td>
+															<td>Prevención padres Jóvenes</td>
+															<td>El programa de prevención ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
 
-   <div class="modal-body" style="padding-top:  1em;">
-								    <div class="table-responsive">
-								    <table class="table table-striped table-condensed table-hover">
-								    <thead>
-								    <tr>
-								    <th>ID</th>
-								    <th>Alumno</th>
-								    <th>Tipo</th>
-								    <th>Nombre</th>
-								    <th></th>
-								    <th></th>
-								    </tr>
-								    </thead>
+														<tr class="default">
+															<td><a href="#myModalgrupos">3996226_2</a></td>
+															<td>Franco</td>
+															<td>Congreso C14</td>
+															<td>El congreso de Ingeniería ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
+
+														<tr class="default">
+															<td><a href="#myModalgrupos">3996226_3</a></td>
+															<td>Reyes</td>
+															<td>Fútbol Soccer</td>
+															<td>El equipo representativo ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
 
-								    <tbody>
-								    <tr class="default">
-								    <td><a href="#myModalgrupos">3996226_1</a></td>
-								    <td>Durán</td>
-								    <td>Congreso C13</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-				
-								    </tr>
-								    
-								      <tr class="default">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Aurioles</td>
-								    <td>Prevención padres Jóvenes</td>
-								    <td>El programa de prevención ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								   
-								    
-								    </tr>
+														<tr class="default">
+															<td><a href="#myModalgrupos">3996226_4</a></td>
+															<td>Alor</td>
+															<td>SATI</td>
+															<td>La mesa de tecnológías ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
 
+														<tr class="default">
+															<td><a href="#myModalgrupos">3996226_5</a></td>
+															<td>Martínez</td>
+															<td>Mecatrónica</td>
+															<td>El diplomado en mecatrónica ...</td>
+															<td><a href="#myModalgrupos">Validar</a></td>
+															<td><a href="#myModalgrupos">Rechazar</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<br><br><br>                      
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+									</div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div>
+						<!-- /.modal -->
 
-								    <tr class="default">
-								    <td><a href="#myModalgrupos">3996226_2</a></td>
-								    <td>Franco</td>
-								    <td>Congreso C14</td>
-								    <td>El congreso de Ingeniería ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								    
-								    </tr>
+						<!-- PORTFOLIO IMAGE 6 ITESM CCV-->
+						<div class="col-md-4">
+							<div class="grid mask">
+								<figure>
+									<img class="img-responsive" src="assets/img/portfolio/img_itesm.png"  alt="">
+									<figcaption>
+										<h5>CCV</h5>
+										<a data-toggle="modal" href="http://www.itesm.mx/wps/wcm/connect/Campus/CCV/Central+de+Veracruz"  target="_blank" class="btn btn-primary btn-lg">Ir</a>
+									</figcaption><!-- /figcaption -->
+								</figure><!-- /figure -->
+							</div><!-- /grid-mask -->
+						</div><!-- /col -->
+					</div><!-- /row -->
+					<br><br>
+				</div><!-- /container -->
+			</div><!-- /container -->     
+		</header>	    
+	</div>
+	<!-- /headerwrap -->
 
-								    <tr class="default">
-								    <td><a href="#myModalgrupos">3996226_3</a></td>
-								    <td>Reyes</td>
-								    <td>Fútbol Soccer</td>
-								    <td>El equipo representativo ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								  
-								    </tr>
-
-
-								    <tr class="default">
-								    <td><a href="#myModalgrupos">3996226_4</a></td>
-								    <td>Alor</td>
-								    <td>SATI</td>
-								    <td>La mesa de tecnológías ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								 
-								   
-								    </tr>
-
-								    <tr class="default">
-								    <td><a href="#myModalgrupos">3996226_5</a></td>
-								    <td>Martínez</td>
-								    <td>Mecatrónica</td>
-								    <td>El diplomado en mecatrónica ...</td>
-								    <td><a href="#myModalgrupos">Validar</a></td>
-								    <td><a href="#myModalgrupos">Rechazar</a></td>
-								
-								    
-								    </tr>
-
-								    </tbody>
-								    </table>
-								    </div>
-								    </div>
-								    <br><br><br>                      
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                  </div>
-                                </div><!-- /.modal-content -->
-                              </div><!-- /.modal-dialog -->
-                            </div>
-                            <!-- /.modal -->
-				
-				<!-- PORTFOLIO IMAGE 6 ITESM CCV-->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/img_itesm.png"  alt="">
-							<figcaption>
-								<h5>CCV</h5>
-								<a data-toggle="modal" href="http://www.itesm.mx/wps/wcm/connect/Campus/CCV/Central+de+Veracruz"  target="_blank" class="btn btn-primary btn-lg">Ir</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-			<br>
-			<br>
-		</div><!-- /row -->
-	</div><!-- /container -->     
-             
-	  		</header>	    
-	    </div>
-        
-        <!-- /headerwrap -->
-
-        
-        
-        <!-- Reportes -->
-        <div id="greywrap">
-        <div class="container" id="reportes" name="reportes">
+	<!-- Reportes -->
+	<div id="greywrap">
+		<div class="container" id="reportes" name="reportes">
 			<div class="row white">
-			
+
 				<h1 class="centered">Reportes</h1>
 				<hr>
-				
+
 				<div  class="centered" class="col-lg-6">
 					<br><br><br>
 
-		<select name="tipo">
-        <option selected>Vista de Reportes
-        <option>Por Alumno
-        <option>Por Generacion
-        <option>Por Estatus
-        <option>Por Actividad/Evento
-        <option>Por Periodo
-        <option>Por Rango/Puntage
-        </select>
-        <br><br><br><br><br><br>
-
+					<select name="tipo">
+						<option selected>Vista de Reportes</option>
+						<option>Por Alumno</option>
+						<option>Por Generacion</option>
+						<option>Por Estatus</option>
+						<option>Por Actividad/Evento</option>
+						<option>Por Periodo</option>
+						<option>Por Rango/Puntage</option>
+					</select>
+					<br><br><br><br><br><br>
 				</div><!-- col-lg-6 -->
-				
+
 				<div class="col-lg-6">
-                    
-<!-- Columna derecha en blanco -->
-                    
-                    
+
+					<!-- Columna derecha en blanco -->
 				</div><!-- col-lg-6 -->
 			</div><!-- row -->
 		</div><!-- container -->
-        </div><strong></strong>
-        </div>
-        <!-- fin de reportes -->
+	</div>
+	<!-- fin de reportes -->
 
+	<!-- Puntaje -->
+	<div class="container" id="puntaje" name="puntaje">
+		<div class="row white">
 
-  
-        <!-- Puntaje -->
-        
-        <div class="container" id="puntaje" name="puntaje">
-			<div class="row white">
-			
-				<h1 class="centered">Sistema de Puntaje General</h1>
-				<hr>
-				
-				<div class="col-lg-6">
+			<h1 class="centered">Sistema de Puntaje General</h1>
+			<hr>
 
-		
-        <br><br><br><br><br><br>
+			<div class="col-lg-6">
+				<br><br><br><br><br><br>
+			</div><!-- col-lg-6 -->
 
-				</div><!-- col-lg-6 -->
-				
-				<div class="col-lg-6">
-                    
-<!-- Columna derecha en blanco -->
-                    
-                    
-				</div><!-- col-lg-6 -->
-			</div><!-- row -->
-		</div><!-- container -->
-        </div><strong></strong>
-        
-        <!-- fin de reportes -->
+			<div class="col-lg-6">
+				<!-- Columna derecha en blanco -->
+			</div><!-- col-lg-6 -->
+		</div><!-- row -->
+	</div><!-- container -->
+	<!-- fin de puntaje -->
 
-
-		<div id="footerwrap">
-			<div class="container">
-				<h4>Created by <a>Eduardo Aurioles - Daniel Durán - Emilio Moreno</a> - Copyright 2014</h4>
-			</div>
+	<div id="footerwrap">
+		<div class="container">
+			<h4>Created by <a>Eduardo Aurioles - Daniel Durán - Emilio Moreno</a> - Copyright 2014</h4>
 		</div>
-    
+	</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-		
-
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/retina.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/retina.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
-  </body>
-</html>
+    <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+ </body>
+ </html>
