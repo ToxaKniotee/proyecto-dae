@@ -4,29 +4,37 @@ USE DAEITESMCCV;
 
 DROP TABLE IF EXISTS Alumnos;
 CREATE TABLE Alumnos(
-	Matricula	TEXT(9)		NOT NULL,
-	Nombre		TEXT(50)	NOT NULL,
-	Apellido	TEXT(50)	NOT NULL,
-	Password	TEXT(50)	NOT NULL
+	Matricula	VARCHAR(9)		NOT NULL,
+	Nombre		VARCHAR(50)		NOT NULL,
+	Apellido	VARCHAR(50)		NOT NULL,
+	Password	VARCHAR(50)		NOT NULL,
+	Generacion	SMALLINT		NOT NULL,
+	Puntaje		INT				NOT NULL,
+	PRIMARY KEY (Matricula)
 );
 
 DROP TABLE IF EXISTS Administradores;
 CREATE TABLE Administradores(
-	Nomina		TEXT(9)		NOT NULL,
-	Password	TEXT(50)	NOT NULL
+	Nomina		VARCHAR(9)		NOT NULL,
+	Password	VARCHAR(50)		NOT NULL,
+	PRIMARY KEY (Nomina)
 );
 
 DROP TABLE IF EXISTS Actividades;
 CREATE TABLE Actividades(
-	Id				INT			NOT NULL,
-	Alumno			INT			NOT NULL,
-	Tipo			INT			NOT NULL,
-	Nombre			TEXT(50)	NOT NULL,
-	Descripcion		TEXT(50)	NOT NULL,
-	Rol				INT			NOT NULL,
-	Periodo			INT			NOT NULL,
-	AreaImpacto		INT			NOT NULL,
-	Aprendizajes	TEXT(50)	NOT NULL,
-	Competencias	TEXT(50)	NOT NULL,
-	PRIMARY KEY (Id)
+	Id				INT			NOT NULL AUTO_INCREMENT,
+	Estado			TINYINT		NOT NULL,
+	Nombre			VARCHAR(50)	NOT NULL,
+	Descripcion		VARCHAR(50)	NOT NULL,
+	Alumno			VARCHAR(9)	NOT NULL,
+	Categoria		VARCHAR(10)	NOT NULL,
+	Tipo			VARCHAR(10)	NOT NULL,
+	Rol				VARCHAR(10)	NOT NULL,
+	Periodo			VARCHAR(10)	NOT NULL,
+	AreaImpacto		VARCHAR(10)	NOT NULL,
+	Aprendizajes	VARCHAR(50)	NOT NULL,
+	Competencias	VARCHAR(50)	NOT NULL,
+	PRIMARY KEY (Id),
+	CONSTRAINT FK_Actividades_Alumnos
+		FOREIGN KEY (Alumno) REFERENCES Alumnos(Matricula)
 );
