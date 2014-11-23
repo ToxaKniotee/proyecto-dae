@@ -73,6 +73,7 @@
 				<div class="container">
 					<div class="row">
 
+						{# Creamos los cuadros con sus enlaces #}
 						{% for category in categories %}
 							{% include 'portfolio-image-cat.twig' %}
 							{% include 'portfolio-image-model.twig' %}
@@ -141,77 +142,11 @@
 							</thead>
 
 							<tbody>
-								<tr class="warning">
-									<td>3996226_1</td>
-									<td>Congreso</td>
-									<td>Congreso C13</td>
-									<td>El congreso de Ingeniería ...</td>
-									<td>Colaborador</td>
-									<td>Ene-May 2014</td>
-									<td>Acádemico</td>
-									<td>El aprendizaje adquirido ...</td>
-									<td>Responsabilidad, Liderazgo</td>
-								</tr>
 
-								<tr class="success">
-									<td>3996226_2</td>
-									<td>Prevención</td>
-									<td>Prevención padres Jóvenes</td>
-									<td>El programa de prevención ...</td>
-									<td>Participante</td>
-									<td>Ene-May 2014</td>
-									<td>Acádemico</td>
-									<td>El aprendizaje adquirido ...</td>
-									<td>Responsabilidad, Liderazgo</td>
-								</tr>
-
-								<tr class="warning">
-									<td>3996226_2</td>
-									<td>Congreso</td>
-									<td>Congreso C14</td>
-									<td>El congreso de Ingeniería ...</td>
-									<td>Organizador</td>
-									<td>Ene-May 2014</td>
-									<td>Acádemico</td>
-									<td>El aprendizaje adquirido ...</td>
-									<td>Responsabilidad, Liderazgo</td>
-								</tr>
-
-								<tr class="info">
-									<td>3996226_3</td>
-									<td>Deporte</td>
-									<td>Fútbol Soccer</td>
-									<td>El equipo representativo ...</td>
-									<td>Delantero</td>
-									<td>Ene-May 2014</td>
-									<td>Acádemico</td>
-									<td>El aprendizaje adquirido ...</td>
-									<td>Responsabilidad, Liderazgo</td>
-								</tr>
-
-								<tr class="warning">
-									<td>3996226_4</td>
-									<td>Mesa</td>
-									<td>SATI</td>
-									<td>La mesa de tecnológías ...</td>
-									<td>Tesorero</td>
-									<td>Ene-May 2014</td>
-									<td>Acádemico</td>
-									<td>El aprendizaje adquirido ...</td>
-									<td>Responsabilidad, Liderazgo</td>
-								</tr>
-
-								<tr class="danger">
-									<td>3996226_5</td> 
-									<td>Festival de Baile</td> 
-									<td>7mo Festival Nacional</td> 
-									<td>El festival nacional ...</td> 
-									<td>Particpante</td> 
-									<td>Ene-May 2014</td>
-									<td>Ac�demico</td>
-									<td>El aprendizaje adquirido ...</td> 
-									<td>Responsabilidad, Liderazgo</td>
-								</tr>
+								{# Generamos la lista de las actividades registradas #}
+								{% for entry in list %}
+									{% include 'tr.twig' %}
+								{% endfor %}
 							</tbody>
 						</table>
 					</div>
