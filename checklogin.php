@@ -1,14 +1,11 @@
 <?php
-	session_start();
-	$username = $_POST["username"];
-	$password = $_POST["password"];
+session_start();
+$username = $_POST["username"];
+$password = $_POST["password"];
 
-	if ($username == "A00123456" && $password == "A00123456"){
-		$_SESSION["username"] = $username;
-		header("location:home.html");
-
-	}
-	else{
-		header("location:index.html?error=true");
-	}
-?>
+if ($username == "A00123456" && $password == "A00123456") {
+    $_SESSION["username"] = $username;
+    header("location:home.html");
+} else {
+    header("location:index.html?error=true");
+}
