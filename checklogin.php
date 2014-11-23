@@ -5,7 +5,7 @@ $password = $_POST["password"];
 
 if ($username == "A00123456" && $password == "A00123456") {
     $_SESSION["username"] = $username;
-    header("location:home.html");
+    header("location:home.php");
 } else {
     header("location:index.html?error=true");
 }

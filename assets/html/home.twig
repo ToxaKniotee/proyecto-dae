@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+	<title>DAE-ITESMCCV</title>
+	{# Incluimos los links #}
+	{% include 'links.html' %}
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+	<!--FACEBOOK PLUGIN SCRIPT-->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=73134822110&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<script type="text/javascript">
+		function click_register()
+		{
+			alert("*** Registro enviado correctamente ***.");
+		}
+	</script>
+
+	<div id="navbar-main">
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-accessibility" style="font-size:30px; color:#3498db;"></span>
+					</button>
+
+					<a class="navbar-brand hidden-xs hidden-sm" href="#home" ><span class="icon icon-accessibility" style="font-size:18px; color:#3498db;"          ></span></a>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#home" class="smoothScroll">Home</a></li>
+						<li><a href="#avisos" class="smoothScroll">Avisos</a></li>
+						<li><a href="#misactividades" class="smoothScroll">Mis Actividades</a></li>
+						<li><a href="#faqs" class="smoothScroll">FAQs</a></li>
+						<li> <a href="#contacto" class="smoothScroll"> Contacto</a></li>
+						<li> <a href="https://www.facebook.com/pages/DAE-Campus-Central-de-Veracruz/104061136309193?fref=ts"  target="_blank" class="smoothScroll"> Facebook</a></li>
+						<li> <a href="https://twitter.com/TecMtyCCV"  target="_blank" class="smoothScroll"> Twitter</a></li>
+					</ul>
+					<p class=" pull-right"><a href="#" class="navbar-link"><u>Cerrar Sesión</u></a></p>
+				</div><!--/.nav-collapse -->
+			</div>
+
+		</div>
+	</div>
+
+	<!-- ==== HEADERWRAP ==== -->
+	<div id="headerwrap" id="home" name="home"> <!-- Imagen central en id headerwrap -->
+		<header class="clearfix">
+
+			<!-- ==== PORTFOLIO ==== -->
+			<div class="container" id="portfolio_home" name="portfolio_home">
+				<div class="row">
+					<br><br><br>
+					<h2><strong>DAE | <small>Sistema de Registro de Logros-Actvidades</small></h2>
+					<hr>
+					<br>
+				</div><!-- /row -->
+				<div class="container">
+					<div class="row">
+
+						{% for category in categories %}
+							{% include 'portfolio-image-cat.twig' %}
+							{% include 'portfolio-image-model.twig' %}
+						{% endfor %}
+
+					</div><!-- /row -->
+					<br>
+					<br>
+				</div><!-- /row -->
+			</div><!-- /container --> 
+		</header> 
+	</div>
+	<!-- /headerwrap -->
+
+	<!-- ==== AVISOS ==== -->
+	<div id="headerwrap" id="avisos" name="avisos"> 
+		<header class="clearfix">
+
+			<!-- ==== PORTFOLIO ==== -->
+			<div class="container" id="portafolio_faqs" name="portafolio_faqs">
+				<div class="row">
+					<br>
+					<h2><strong>Avisos | <small>'Avisos informativos</small></h2>
+					<hr><br>
+				</div><!-- /row -->
+
+				<div align="left">
+					<!-- columna derecha vacia NO BORRAR POR QUE PIERDE FORMATO LA SECCION -->  
+					<center>
+						<div class="fb-like-box" data-href="https://www.facebook.com/pages/DAE-Campus-Central-de-Veracruz/104061136309193" data-width="400px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="true"></div>
+					</center>
+				</div>
+			</div><!-- container -->
+		</header>
+	</div>
+
+	<!-- ==== mis actividades ==== -->
+
+	<!-- ==== HEADERWRAP actividades ==== -->
+	<div id="headerwrap" id="misactividades" name="misactividades"> 
+		<header class="clearfix">
+
+			<!-- ==== PORTFOLIO ==== -->
+			<div class="container" id="portafolio_actividades" name="portafolio_actividades">
+				<div class="row">
+					<br>
+					<h2><strong>MIS ACTIVIDADES | <small>Actvidades registradas por el alumno</small></h2>
+					<hr><br>
+				</div><!-- /row -->
+
+				<div class="container" style="padding-top:  1em;">
+					<div class="table-responsive">
+						<table class="table table-striped table-condensed table-hover">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Tipo</th>
+									<th>Nombre</th>
+									<th>Descripción</th>
+									<th>Rol</th>
+									<th>Periodo</th>
+									<th>Área de Impacto</th>
+									<th>Aprendizaje</th>
+									<th>Competencia</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr class="warning">
+									<td>3996226_1</td>
+									<td>Congreso</td>
+									<td>Congreso C13</td>
+									<td>El congreso de Ingeniería ...</td>
+									<td>Colaborador</td>
+									<td>Ene-May 2014</td>
+									<td>Acádemico</td>
+									<td>El aprendizaje adquirido ...</td>
+									<td>Responsabilidad, Liderazgo</td>
+								</tr>
+
+								<tr class="success">
+									<td>3996226_2</td>
+									<td>Prevención</td>
+									<td>Prevención padres Jóvenes</td>
+									<td>El programa de prevención ...</td>
+									<td>Participante</td>
+									<td>Ene-May 2014</td>
+									<td>Acádemico</td>
+									<td>El aprendizaje adquirido ...</td>
+									<td>Responsabilidad, Liderazgo</td>
+								</tr>
+
+								<tr class="warning">
+									<td>3996226_2</td>
+									<td>Congreso</td>
+									<td>Congreso C14</td>
+									<td>El congreso de Ingeniería ...</td>
+									<td>Organizador</td>
+									<td>Ene-May 2014</td>
+									<td>Acádemico</td>
+									<td>El aprendizaje adquirido ...</td>
+									<td>Responsabilidad, Liderazgo</td>
+								</tr>
+
+								<tr class="info">
+									<td>3996226_3</td>
+									<td>Deporte</td>
+									<td>Fútbol Soccer</td>
+									<td>El equipo representativo ...</td>
+									<td>Delantero</td>
+									<td>Ene-May 2014</td>
+									<td>Acádemico</td>
+									<td>El aprendizaje adquirido ...</td>
+									<td>Responsabilidad, Liderazgo</td>
+								</tr>
+
+								<tr class="warning">
+									<td>3996226_4</td>
+									<td>Mesa</td>
+									<td>SATI</td>
+									<td>La mesa de tecnológías ...</td>
+									<td>Tesorero</td>
+									<td>Ene-May 2014</td>
+									<td>Acádemico</td>
+									<td>El aprendizaje adquirido ...</td>
+									<td>Responsabilidad, Liderazgo</td>
+								</tr>
+
+								<tr class="danger">
+									<td>3996226_5</td> 
+									<td>Festival de Baile</td> 
+									<td>7mo Festival Nacional</td> 
+									<td>El festival nacional ...</td> 
+									<td>Particpante</td> 
+									<td>Ene-May 2014</td>
+									<td>Ac�demico</td>
+									<td>El aprendizaje adquirido ...</td> 
+									<td>Responsabilidad, Liderazgo</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+
+	<!-- ==== FAQS ==== -->
+	<div id="headerwrap" id="faqs" name="faqs"> 
+		<header class="clearfix">
+
+			<!-- ==== PORTFOLIO ==== -->
+			<div class="container" id="portafolio_faqs" name="portafolio_faqs">
+				<div class="row">
+					<br>
+					<h2><strong>FAQS | <small>'Dudas y aclaraciones</small></h2>
+					<hr><br>
+				</div><!-- /row -->
+
+				<div align="left">
+					<!-- columna derecha vacia NO BORRAR POR QUE PIERDE FORMATO LA SECCION -->
+					<ul> 
+						<a href=""><li><h5>¿Cómo sé si mi actividad fue registrada?</li></a>
+						<a href=""><li><h5>¿Por qué no puedo registrar mi actividad?</li></a>
+						<a href=""><li><h5>¿Cómo puedo saber la cantidad de puntos percibidos?</li></a>
+						<a href=""><li><h5>¿Cómo puedo sincronizar mi cuenta para mi acceso al portal?</li></a>
+						<a href=""><li><h5>¿Cómo se debe registrar una actividad?</li></a>
+						<a href=""><li><h5>¿Porqué mi cuenta aparece como ya activada?</li></a>
+						<a href=""><li><h5>Tengo problemas para entrar a mi cuenta ¿Cómo puedo obtener ayuda?</li></a>
+						<a href=""><li><h5>Olvide mi contraseña ¿Cómo puedo recuperarla?</li></a>
+						<a href=""><li><h5>¿Qué pasa si no puedo recuperar mi contraseña porque olvidé mi respuesta a la pregunta de seguridad?</li></a>
+						<a href=""><li><h5>¿Cómo puedo obtener información acerca de admisiones?</li></a>
+						<a href=""><li><h5>¿Qué navegador debo usar para entrar al portal?</li></a>
+						<a href=""><li><h5>¿Por qué no puedo entrar al portal usando Mozilla Firefox 3.0 o Safari para Mac?</li></a>
+						<a href=""><li><h5>Reingreso con receso</li></a>
+					</ul>
+				</div>
+			</div><!-- container -->
+		</header>
+	</div>
+
+	<!-- ====  contacto  ==== -->
+
+	<!-- ==== HEADERWRAP contecto ==== -->
+	<div id="headerwrap" id="contacto" name="contacto"> 
+		<header class="clearfix">
+
+			<!-- ==== PORTFOLIO ==== -->
+			<div class="container" id="portafolio_contacto" name="portafolio_contacto">
+				<div class="row">
+					<br>
+					<h2><strong>CONTACTO | <small>Queremos escucharte</small></h2>
+					<hr><br>
+				</div><!-- /row -->
+
+				<div class="row">
+
+					<div class="col-lg-4">
+						<h3><strong>Información de contacto</h3><br>
+						<div align="left">
+							<label><span class="icon icon-home"></span> Av Eugenio Garza Sada 1, Córdoba, Ver.</label><br/>
+							<label><span class="icon icon-phone"></span> 01 271 717 0500</label> <br/>
+							<label><span class="icon icon-envelop"></span> <a href="#"> jreyesc@itesm.mx</a></label> <br/>
+							<label><span class="icon icon-twitter"></span> <a href="#"> @DAECCV </a></label> <br/>
+							<label><span class="icon icon-facebook"></span> <a href="#"> DAE Campus Central de Veracruz </a></label> <br/>
+						</div>
+					</div><!-- col -->
+
+					<div class="col-lg-4">
+						<h3><strong>¿Dudas o Comentarios?</h3>
+						<p>
+							<form class="form-horizontal" role="form">
+								<div class="form-group">
+									<label for="inputEmail1" class="col-lg-4 control-label"></label>
+									<div class="col-lg-10">
+										<input type="email" class="form-control" id="inputEmail1" placeholder="E-mail">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="text1" class="col-lg-4 control-label"></label>
+									<div class="col-lg-10">
+										<textarea class="form-control" rows="3" placeholder="Dudas o comentarios"></textarea>              
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-lg-10">
+										<button type="submit" class="btn btn-default">Enviar</button>
+									</div>
+								</div>
+							</form><!-- form -->
+						</p>
+					</div><!-- col -->
+
+					<div class="col-lg-4">
+						<h3><strong>Código de Ética</h3><br>
+
+						<div align="left"><h5>“Apegándome al Código de Ética de los Estudiantes del Tecnológico de Monterrey, me comprometo a que mi actuación en este examen, tarea, actividad, esté regida por la honestidad académica. En congruencia con el compromiso adquirido al firmar dicho código, realizaré este examen, tarea, actividad de forma honesta y personal, para reflejar, a través de él, mi conocimiento y aceptar, posteriormente, la evaluación obtenida.”</h5></div>
+					</div><!-- col -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</header>
+	</div>
+
+	<div id="footerwrap">
+		<div class="container">
+			<h4>Created by <a>KillerPollo Systems</a> - Copyright 2014</h4>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/retina.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

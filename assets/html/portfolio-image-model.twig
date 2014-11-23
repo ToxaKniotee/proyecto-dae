@@ -1,0 +1,105 @@
+<!-- MODAL Imagen 1 Grupos -->
+<div class="modal fade" id="myModal{{category.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">{{category.name}}</h4>
+			</div>
+			<div class="modal-body">
+				<p><img class="img-responsive" src="assets/img/portfolio/img_{{category.id}}.png" alt=""></p>
+				<h2>Registro |<small>{{category.name|capitalize}}</small></h2><br>
+
+				<!-- Comienzo del FORM -->
+				<div class="row">   
+					<div class="container">  
+						<form class="form-horizontal" role="form">
+
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label" method="post">Tipo</label>
+								<div  class="col-sm-2"> 
+									<select class="form-control" id="tipo1" name="tipo">
+										{% for type in category.types %}
+											<option>{{type}}</option>
+										{% endfor %}
+									</select>  
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+								<div class="col-sm-2">
+									<input type="email" class="form-control" id="name1" placeholder="Nombre del evento" name="nproyecto">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputDescription" class="col-sm-2 control-label">Descripción</label>
+								<div class="col-sm-2">
+									<textarea name="descripcion" id="descipricion1" class="form-control" rows="3"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-2 control-label">Rol</label>
+								<div class="col-sm-2">
+									<select class="form-control" id="rol1" name="rol">
+										{% for rol in roles %}
+											<option>{{rol}}</option>
+										{% endfor %}
+									</select> 
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-2 control-label">Periodo</label>
+								<div class="col-sm-2">  
+									<select class="form-control" name="periodo" id="periodo1">
+										{% for periodo in periodos %}
+											<option>{{periodo}}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-2 control-label">Área de impacto</label>
+								<div class="col-sm-2">
+									<select class="form-control" id="impacto1" name="tipo">
+										{% for area in areas %}
+											<option>{{area}}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputDescription" class="col-sm-2 control-label">Aprendizaje</label>
+								<div class="col-sm-2">
+									<textarea name="descripcion" id="aprendizaje1" class="form-control" rows="3"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">  
+								<label for="inputEmail3" class="col-sm-2 control-label">Competencias</label>
+								<div class="col-sm-2 checkbox">  
+									<textarea name="descripcion" id="competencias1" class="form-control" rows="3"></textarea>
+								</div>
+							</div>
+
+						</form>
+					</div>
+				</div>
+				<!-- Terminacion del FORM -->   
+
+				<div align="center">
+					<button type="button" onClick="click_register()" class="btn btn-default">Registrar</button>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
