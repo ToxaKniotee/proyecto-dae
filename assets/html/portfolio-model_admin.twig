@@ -30,8 +30,8 @@
 										<td>{{rev.alumno}}</td>
 										<td>{{rev.tipo}}</td>
 										<td>{{rev.nombre}}</td>
-										<td><a href="#myModalgrupos">Validar</a></td>
-										<td><a href="#myModalgrupos">Rechazar</a></td>
+										<td><a href="confirmar.php?id={{rev.id}}&action=1&category={{category.id}}">Validar</a></td>
+										<td><a href="confirmar.php?id={{rev.id}}&action=-1&category={{category.id}}">Rechazar</a></td>
 									</tr>
 								{% endfor %}
 							</tbody>
