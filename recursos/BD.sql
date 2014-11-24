@@ -4,12 +4,12 @@ USE DAEITESMCCV;
 
 DROP TABLE IF EXISTS Alumnos;
 CREATE TABLE Alumnos(
-	Matricula	VARCHAR(9)		NOT NULL,
-	Nombre		VARCHAR(50)		NOT NULL,
-	Apellido	VARCHAR(50)		NOT NULL,
-	Password	VARCHAR(50)		NOT NULL,
-	Generacion	SMALLINT		NOT NULL,
-	Puntaje		INT				NOT NULL,
+	Matricula		VARCHAR(9)		NOT NULL,
+	Nombre			VARCHAR(50)		NOT NULL,
+	Apellido		VARCHAR(50)		NOT NULL,
+	Password		VARCHAR(50)		NOT NULL,
+	Generacion		SMALLINT		NOT NULL,
+	Puntaje_Total	INT				NOT NULL,
 	PRIMARY KEY (Matricula)
 );
 
@@ -34,6 +34,8 @@ CREATE TABLE Actividades(
 	AreaImpacto		VARCHAR(10)	NOT NULL,
 	Aprendizajes	VARCHAR(50)	NOT NULL,
 	Competencias	VARCHAR(50)	NOT NULL,
+	Puntaje			INT	,
+	Observaciones  VARCHAR(50)	,
 	PRIMARY KEY (Id),
 	CONSTRAINT FK_Actividades_Alumnos
 		FOREIGN KEY (Alumno) REFERENCES Alumnos(Matricula)
