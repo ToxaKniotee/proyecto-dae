@@ -13,7 +13,7 @@ $twig = new Twig_Environment($loader);
 include('db_conn.php');
 
 /* Creamos un array para cada una de las categorías, de esta forma podemos automatizar la búsqueda*/
-$categories = array('grupos', 'difusion', 'deportes', 'prevencion');
+$categories = array('grupos', 'difusion', 'deportes', 'prevencion', 'formacion');
 
 /* Creamos un array general en donde vamos a poner cada una de las categorías que fatan por aprovar*/
 $rev_wait = array();
