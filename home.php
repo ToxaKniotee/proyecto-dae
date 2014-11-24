@@ -9,6 +9,39 @@ Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem('assets/html');
 $twig = new Twig_Environment($loader);
 
+/* Nos conectamos a la base de datos */
+include('db_conn.php');
+
+/* Consulta para traer la lista de actividades de este usuario */
+$sql ='SELECT A.Id, A.Tipo, A.Nombre, A.Descripcion, A.Rol, A.Periodo,
+A.AreaImpacto, A.Aprendizajes, A.Competencias FROM Actividades as A, Alumnos
+as U WHERE A.Alumno = U.Matricula';
+
+/* Ejecutamos la consulta */
+$result = mysqli_query($conn, $sql);
+
+/* Si los resultados no estan vacios entonces los agregamos a un array */
+if (mysqli_num_rows($result) > 0) {
+    
+    /* Creamos el array */
+    $list = array();
+
+    /* Agregamos las entradas a la lista */
+    while ($row = mysqli_fetch_array($result)) {
+        $temp_array = array(
+            'ID' => $row[0],
+            'Tipo' => $row[1],
+            'Nombre' => $row[2],
+            'Descripción' => $row[3],
+            'Rol' => $row[4],
+            'Periodo' => $row[5],
+            'Área' => $row[6],
+            'Aprendizaje' => $row[7],
+            'Competencia' => $row[8]);
+        array_push($list, $temp_array);
+    }
+}
+
 /* Creamos el array para las categorias */
 $parameters = array(
     'categories' => array(
@@ -60,62 +93,7 @@ $parameters = array(
         'Trimestral Ene - Abr de 2015',
         'Trimestral Sep - Dic de 2014'),
     'areas' => array('Social', 'Ambiental', 'Económico'),
-    'list' => array(
-        array(
-            'class' => 'warning',
-            'ID' => '3996226_1',
-            'Tipo' => 'Congreso',
-            'Nombre' => 'Congreso C13',
-            'Descripción' => 'El congreso de Ingeniería ...',
-            'Rol' => 'Colaborador',
-            'Periodo' => 'Ene-May 2014',
-            'Área' => 'Acádemico',
-            'Aprendizaje' => 'El aprendizaje adquirido ...',
-            'Competencia' => 'Responsabilidad, Liderazgo'),
-        array(
-            'class' => 'success',
-            'ID' => '3996226_2',
-            'Tipo' => 'Prevención',
-            'Nombre' => 'Prevención padres Jóvenes',
-            'Descripción' => 'El programa de prevención ...',
-            'Rol' => 'Participante',
-            'Periodo' => 'Ene-May 2014',
-            'Área' => 'Acádemico',
-            'Aprendizaje' => 'El aprendizaje adquirido ...',
-            'Competencia' => 'Responsabilidad, Liderazgo'),
-        array(
-            'class' => 'info',
-            'ID' => '3996226_3',
-            'Tipo' => 'Deporte',
-            'Nombre' => 'Fútbol Soccer',
-            'Descripción' => 'El equipo representativo ...',
-            'Rol' => 'Delantero',
-            'Periodo' => 'Ene-May 2014',
-            'Área' => 'Acádemico',
-            'Aprendizaje' => 'El aprendizaje adquirido ...',
-            'Competencia' => 'Responsabilidad, Liderazgo'),
-        array(
-            'class' => 'warning',
-            'ID' => '3996226_4',
-            'Tipo' => 'Mesa',
-            'Nombre' => 'SATI',
-            'Descripción' => 'La mesa de tecnológías ...',
-            'Rol' => 'Tesorero',
-            'Periodo' => 'Ene-May 2014',
-            'Área' => 'Acádemico',
-            'Aprendizaje' => 'El aprendizaje adquirido ...',
-            'Competencia' => 'Responsabilidad, Liderazgo'),
-        array(
-            'class' => 'danger',
-            'ID' => '3996226_5',
-            'Tipo' => 'Festival de Baile',
-            'Nombre' => '7mo Festival Nacional',
-            'Descripción' => 'El festival nacional ...',
-            'Rol' => 'Particpante',
-            'Periodo' => 'Ene-May 2014',
-            'Área' => 'Académico',
-            'Aprendizaje' => 'El aprendizaje adquirido ...',
-            'Competencia' => 'Responsabilidad, Liderazgo'))
+    'list' => $list
 );
 
 /* Cargamos la página */
