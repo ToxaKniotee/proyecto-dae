@@ -40,3 +40,6 @@ CREATE TABLE Actividades(
 	CONSTRAINT FK_Actividades_Alumnos
 		FOREIGN KEY (Alumno) REFERENCES Alumnos(Matricula)
 );
+
+INSERT INTO Alumnos (Matricula, Nombre, Apellido, Password, Generacion, Puntaje) VALUES ('A00123456', 'Nombre', 'Apellido', 'A00123456', 2010, 0);
+INSERT INTO Administradores (Nomina, Password) VALUES ('A00123456', 'A00123456');
