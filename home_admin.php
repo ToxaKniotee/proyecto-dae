@@ -23,32 +23,40 @@ $parameters = array(
                     'id' => '3996226_1',
                     'alumno' => 'Durán',
                     'tipo' => 'Congreso C13',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Aurioles',
                     'tipo' => 'Prevención padres Jóvenes',
-                    'nombre' => 'El programa de prevención ...'),
+                    'nombre' => 'El programa de prevención ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Franco',
                     'tipo' => 'Congreso C14',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_3',
                     'alumno' => 'Reyes',
                     'tipo' => 'Fútbol Soccer',
-                    'nombre' => 'El equipo representativo ...'),
+                    'nombre' => 'El equipo representativo ...'
+                ),
                 array(
                     'id' => '3996226_4',
                     'alumno' => 'Alor',
                     'tipo' => 'SATI',
-                    'nombre' => 'La mesa de tecnológías ...'),
+                    'nombre' => 'La mesa de tecnológías ...'
+                ),
                 array(
                     'id' => '3996226_5',
                     'alumno' => 'Martínez',
                     'tipo' => 'Mecatrónica',
-                    'nombre' => 'El diplomado en mecatrónica ...'))),
+                    'nombre' => 'El diplomado en mecatrónica ...'
+                )
+            )
+        ),
         'difusion' => array(
             'id' => 'difusion',
             'name' => 'Difusión UUAAAUUU',
@@ -60,32 +68,40 @@ $parameters = array(
                     'id' => '3996226_1',
                     'alumno' => 'Durán',
                     'tipo' => 'Congreso C13',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Aurioles',
                     'tipo' => 'Prevención padres Jóvenes',
-                    'nombre' => 'El programa de prevención ...'),
+                    'nombre' => 'El programa de prevención ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Franco',
                     'tipo' => 'Congreso C14',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_3',
                     'alumno' => 'Reyes',
                     'tipo' => 'Fútbol Soccer',
-                    'nombre' => 'El equipo representativo ...'),
+                    'nombre' => 'El equipo representativo ...'
+                ),
                 array(
                     'id' => '3996226_4',
                     'alumno' => 'Alor',
                     'tipo' => 'SATI',
-                    'nombre' => 'La mesa de tecnológías ...'),
+                    'nombre' => 'La mesa de tecnológías ...'
+                ),
                 array(
                     'id' => '3996226_5',
                     'alumno' => 'Martínez',
                     'tipo' => 'Mecatrónica',
-                    'nombre' => 'El diplomado en mecatrónica ...'))),
+                    'nombre' => 'El diplomado en mecatrónica ...'
+                )
+            )
+        ),
         'deportes' => array(
             'id' => 'deportes',
             'name' => 'Deportes',
@@ -97,32 +113,40 @@ $parameters = array(
                     'id' => '3996226_1',
                     'alumno' => 'Durán',
                     'tipo' => 'Congreso C13',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Aurioles',
                     'tipo' => 'Prevención padres Jóvenes',
-                    'nombre' => 'El programa de prevención ...'),
+                    'nombre' => 'El programa de prevención ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Franco',
                     'tipo' => 'Congreso C14',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_3',
                     'alumno' => 'Reyes',
                     'tipo' => 'Fútbol Soccer',
-                    'nombre' => 'El equipo representativo ...'),
+                    'nombre' => 'El equipo representativo ...'
+                ),
                 array(
                     'id' => '3996226_4',
                     'alumno' => 'Alor',
                     'tipo' => 'SATI',
-                    'nombre' => 'La mesa de tecnológías ...'),
+                    'nombre' => 'La mesa de tecnológías ...'
+                ),
                 array(
                     'id' => '3996226_5',
                     'alumno' => 'Martínez',
                     'tipo' => 'Mecatrónica',
-                    'nombre' => 'El diplomado en mecatrónica ...'))),
+                    'nombre' => 'El diplomado en mecatrónica ...'
+                )
+            )
+        ),
         'prevencion' => array(
             'id' => 'prevencion',
             'name' => 'Prevención social',
@@ -134,32 +158,40 @@ $parameters = array(
                     'id' => '3996226_1',
                     'alumno' => 'Durán',
                     'tipo' => 'Congreso C13',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Aurioles',
                     'tipo' => 'Prevención padres Jóvenes',
-                    'nombre' => 'El programa de prevención ...'),
+                    'nombre' => 'El programa de prevención ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Franco',
                     'tipo' => 'Congreso C14',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_3',
                     'alumno' => 'Reyes',
                     'tipo' => 'Fútbol Soccer',
-                    'nombre' => 'El equipo representativo ...'),
+                    'nombre' => 'El equipo representativo ...'
+                ),
                 array(
                     'id' => '3996226_4',
                     'alumno' => 'Alor',
                     'tipo' => 'SATI',
-                    'nombre' => 'La mesa de tecnológías ...'),
+                    'nombre' => 'La mesa de tecnológías ...'
+                ),
                 array(
                     'id' => '3996226_5',
                     'alumno' => 'Martínez',
                     'tipo' => 'Mecatrónica',
-                    'nombre' => 'El diplomado en mecatrónica ...'))),
+                    'nombre' => 'El diplomado en mecatrónica ...'
+                )
+            )
+        ),
         'formacion' => array(
             'id' => 'formacion',
             'name' => 'Formación social',
@@ -171,68 +203,85 @@ $parameters = array(
                     'id' => '3996226_1',
                     'alumno' => 'Durán',
                     'tipo' => 'Congreso C13',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Aurioles',
                     'tipo' => 'Prevención padres Jóvenes',
-                    'nombre' => 'El programa de prevención ...'),
+                    'nombre' => 'El programa de prevención ...'
+                ),
                 array(
                     'id' => '3996226_2',
                     'alumno' => 'Franco',
                     'tipo' => 'Congreso C14',
-                    'nombre' => 'El congreso de Ingeniería ...'),
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
                 array(
                     'id' => '3996226_3',
                     'alumno' => 'Reyes',
                     'tipo' => 'Fútbol Soccer',
-                    'nombre' => 'El equipo representativo ...'),
+                    'nombre' => 'El equipo representativo ...'
+                ),
                 array(
                     'id' => '3996226_4',
                     'alumno' => 'Alor',
                     'tipo' => 'SATI',
-                    'nombre' => 'La mesa de tecnológías ...'),
+                    'nombre' => 'La mesa de tecnológías ...'
+                ),
                 array(
                     'id' => '3996226_5',
                     'alumno' => 'Martínez',
                     'tipo' => 'Mecatrónica',
-                    'nombre' => 'El diplomado en mecatrónica ...'))),
+                    'nombre' => 'El diplomado en mecatrónica ...'
+                )
+            )
+        ),
         'itesm' => array(
             'id' => 'itesm',
             'name' => 'CCV',
             'message' => 'Ir',
             'href' => 'http://www.itesm.mx/wps/wcm/connect/Campus/CCV/',
             'rev_wait' => array(
-                    array(
-                        'id' => '3996226_1',
-                        'alumno' => 'Durán',
-                        'tipo' => 'Congreso C13',
-                        'nombre' => 'El congreso de Ingeniería ...'),
-                    array(
-                        'id' => '3996226_2',
-                        'alumno' => 'Aurioles',
-                        'tipo' => 'Prevención padres Jóvenes',
-                        'nombre' => 'El programa de prevención ...'),
-                    array(
-                        'id' => '3996226_2',
-                        'alumno' => 'Franco',
-                        'tipo' => 'Congreso C14',
-                        'nombre' => 'El congreso de Ingeniería ...'),
-                    array(
-                        'id' => '3996226_3',
-                        'alumno' => 'Reyes',
-                        'tipo' => 'Fútbol Soccer',
-                        'nombre' => 'El equipo representativo ...'),
-                    array(
-                        'id' => '3996226_4',
-                        'alumno' => 'Alor',
-                        'tipo' => 'SATI',
-                        'nombre' => 'La mesa de tecnológías ...'),
-                    array(
-                        'id' => '3996226_5',
-                        'alumno' => 'Martínez',
-                        'tipo' => 'Mecatrónica',
-                        'nombre' => 'El diplomado en mecatrónica ...'))))
+                array(
+                    'id' => '3996226_1',
+                    'alumno' => 'Durán',
+                    'tipo' => 'Congreso C13',
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
+                array(
+                    'id' => '3996226_2',
+                    'alumno' => 'Aurioles',
+                    'tipo' => 'Prevención padres Jóvenes',
+                    'nombre' => 'El programa de prevención ...'
+                ),
+                array(
+                    'id' => '3996226_2',
+                    'alumno' => 'Franco',
+                    'tipo' => 'Congreso C14',
+                    'nombre' => 'El congreso de Ingeniería ...'
+                ),
+                array(
+                    'id' => '3996226_3',
+                    'alumno' => 'Reyes',
+                    'tipo' => 'Fútbol Soccer',
+                    'nombre' => 'El equipo representativo ...'
+                ),
+                array(
+                    'id' => '3996226_4',
+                    'alumno' => 'Alor',
+                    'tipo' => 'SATI',
+                    'nombre' => 'La mesa de tecnológías ...'
+                ),
+                array(
+                    'id' => '3996226_5',
+                    'alumno' => 'Martínez',
+                    'tipo' => 'Mecatrónica',
+                    'nombre' => 'El diplomado en mecatrónica ...'
+                )
+            )
+        )
+    )
 );
 
 /* Cargamos la página */
