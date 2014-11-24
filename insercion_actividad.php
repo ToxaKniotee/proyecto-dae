@@ -1,6 +1,10 @@
 <?php
 
+/* Conexión con la base de datos */
 include('db_conn.php');
+
+/* Iniciamos la sesión */
+session_start();
 
 /* Obtenemos los valores */
 $categoria = $_POST['categoria'];
@@ -12,7 +16,7 @@ $periodo = $_POST['periodo'];
 $impacto = $_POST['impacto'];
 $aprendizaje = $_POST['aprendizaje'];
 $competencias = $_POST['competencias'];
-$alumno = $_POST['alumno'];
+$alumno = $_SESSION['username'];
 
 /* Creamos la sentencia de inserción */
 $q = "INSERT INTO Actividades (Estado, Nombre, Descripcion, Alumno, Categoria, Tipo, Rol, Periodo, AreaImpacto,
