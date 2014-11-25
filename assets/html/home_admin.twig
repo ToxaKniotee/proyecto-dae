@@ -54,6 +54,11 @@
 						{% for category in categories %}
 							{% include 'portfolio-image_admin.twig' %}
 							{% include 'portfolio-model_admin.twig' %}
+
+							{# Creamos los models para actualizar las observaciones #}
+							{% for rev in category.rev_wait %}
+								{% include 'model_observaciones.twig' %}
+							{% endfor %}
 						{% endfor %}
 
 					</div><!-- /row -->

@@ -27,8 +27,8 @@ for ($i = 0; $i < count($categories); $i++) {
     $category = array();
 
     /* Creamos la sentencia */
-    $sql = "SELECT A.Id, U.Nombre, A.Tipo, A.Nombre FROM Alumnos AS U, Actividades AS A WHERE A.Alumno = U.Matricula AND
-    A.Categoria = '$category_name' AND A.Estado = 0";
+    $sql = "SELECT A.Id, U.Nombre, A.Tipo, A.Nombre, A.Observaciones FROM Alumnos AS U, Actividades AS A WHERE A.Alumno =
+    U.Matricula AND A.Categoria = '$category_name' AND A.Estado = 0";
 
     /* Ejecutamos la sentencia */
     $result = mysqli_query($conn, $sql);
@@ -40,7 +40,8 @@ for ($i = 0; $i < count($categories); $i++) {
                 'id' => $row[0],
                 'alumno' => $row[1],
                 'tipo' => $row[2],
-                'nombre' => $row[3]);
+                'nombre' => $row[3],
+                'observaciones' => $row[4]);
             array_push($category, $temp_array);
         }
     }
