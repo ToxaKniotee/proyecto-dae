@@ -41,5 +41,5 @@ CREATE TABLE Actividades(
 		FOREIGN KEY (Alumno) REFERENCES Alumnos(Matricula)
 );
 
-INSERT INTO Alumnos (Matricula, Nombre, Apellido, Password, Generacion, Puntaje) VALUES ('A00123456', 'Nombre', 'Apellido', 'A00123456', 2010, 0);
+INSERT INTO Alumnos (Matricula, Nombre, Apellido, Password, Generacion, Puntaje_Total) VALUES ('A00123456', 'Nombre', 'Apellido', 'A00123456', 2010, 0);
 INSERT INTO Administradores (Nomina, Password) VALUES ('A00123456', 'A00123456');
