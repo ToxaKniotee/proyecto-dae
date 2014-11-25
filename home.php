@@ -20,11 +20,12 @@ as U WHERE A.Alumno = U.Matricula';
 /* Ejecutamos la consulta */
 $result = mysqli_query($conn, $sql);
 
+/* Creamos el array */
+$list = array();
+
 /* Si los resultados no estan vacios entonces los agregamos a un array */
 if (mysqli_num_rows($result) > 0) {
     
-    /* Creamos el array */
-    $list = array();
 
     /* Agregamos las entradas a la lista */
     while ($row = mysqli_fetch_array($result)) {
@@ -50,31 +51,31 @@ $parameters = array(
             'name' => 'Grupos Estudiantiles',
             'message' => 'Registra tu actividad',
             'href' => '#myModalgrupos',
-            'types' => array('Mesa', 'SATI', 'SALAE', 'SAIIS')),
+            'types' => array('SALIN', 'SATI', 'SALAE', 'SAIIS','SALEM','SAPREPA','LIDERAZGO','INNOVACION')),
         'difusion' => array(
             'id' => 'difusion',
             'name' => 'Difusión Cultural',
             'message' => 'Registra tu actividad',
             'href' => '#myModaldifusion',
-            'types' => array('Mesa', 'SATI', 'SALAE', 'SAIIS')),
+            'types' => array('Hip-Hop', 'Teatro', 'Baile de salón', 'Fotografía','Canto','Batería','Guitarra','Piano','Armonía')),
         'deportes' => array(
             'id' => 'deportes',
             'name' => 'Deportes',
             'message' => 'Registra tu actividad',
             'href' => '#myModaldeportes',
-            'types' => array('Mesa', 'SATI', 'SALAE', 'SAIIS')),
+            'types' => array('Basquetbol Varonil', 'Futbol Varonil Mayor', 'Futbol Varonil Juvenil', 'Voleibol Femenil','Gimnasio','Tenis','Kick-boxing','Tae Kwon Do','Cross fit')),
         'prevencion' => array(
             'id' => 'prevencion',
             'name' => 'Prevención social',
             'message' => 'Registra tu actividad',
             'href' => '#myModalprevencion',
-            'types' => array('Mesa', 'SATI', 'SALAE', 'SAIIS')),
+            'types' => array('Anorexia', 'Bulimia', 'Alimentación', 'Drogadicción','Tabaquismo','SIDA','Alcoholismo','Baby Care')),
         'formacion' => array(
             'id' => 'formacion',
             'name' => 'Formación social',
             'message' => 'Registra tu actividad',
             'href' => '#myModalformacion',
-            'types' => array('Mesa', 'SATI', 'SALAE', 'SAIIS')),
+            'types' => array('Prep@net', 'Fundación Córdoba', 'Patronato Casa Hogar "Córdoba, A.C."', 'Cree','CRIO','Cihuatl')),
         'itesm' => array(
             'id' => 'itesm',
             'name' => 'ITESM',

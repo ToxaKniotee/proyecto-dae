@@ -19,8 +19,8 @@
 							<input type="hidden" name="categoria" value="{{category.id}}" />
 
 							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-2 control-label" method="post">Tipo</label>
-								<div  class="col-sm-2"> 
+								<label for="inputEmail3" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-0 control-label" method="post">Tipo</label>
+								<div  class="col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0"> 
 									<select class="form-control" id="tipo1" name="tipo">
 										{% for type in category.types %}
 											<option>{{type}}</option>
@@ -30,22 +30,22 @@
 							</div>
 
 							<div class="form-group">
-								<label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
-								<div class="col-sm-2">
+								<label for="inputEmail3" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-0  control-label">Nombre</label>
+								<div class="col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">
 									<input type="text" class="form-control" id="nombre" placeholder="Nombre del evento" name="nombre">
 								</div>
 							</div>
 
 							<div class="form-group">
-								<label for="inputDescription" class="col-sm-2 control-label">Descripción</label>
-								<div class="col-sm-2">
+								<label for="inputDescription" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-0  control-label">Descripción</label>
+								<div class="col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">
 									<textarea name="descripcion" id="descipricion1" class="form-control" rows="3"></textarea>
 								</div>
 							</div>
 
 							<div class="form-group">
-								<label for="inputPassword3" class="col-sm-2 control-label">Rol</label>
-								<div class="col-sm-2">
+								<label for="inputPassword3" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-0  control-label">Rol</label>
+								<div class="col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">
 									<select class="form-control" id="rol1" name="rol">
 										{% for rol in roles %}
 											<option>{{rol}}</option>
@@ -55,8 +55,8 @@
 							</div>
 
 							<div class="form-group">
-								<label for="inputPassword3" class="col-sm-2 control-label">Periodo</label>
-								<div class="col-sm-2">  
+								<label for="inputPassword3" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-0  control-label">Periodo</label>
+								<div class="col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">  
 									<select class="form-control" name="periodo" id="periodo1">
 										{% for periodo in periodos %}
 											<option>{{periodo}}</option>
@@ -66,8 +66,8 @@
 							</div>
 
 							<div class="form-group">
-								<label for="inputPassword3" class="col-sm-2 control-label">Área de impacto</label>
-								<div class="col-sm-2">
+								<label for="inputPassword3" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-0  control-label">Área de impacto</label>
+								<div class="col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">
 									<select class="form-control" id="impacto" name="impacto">
 										{% for area in areas %}
 											<option>{{area}}</option>
@@ -77,15 +77,15 @@
 							</div>
 
 							<div class="form-group">
-								<label for="inputDescription" class="col-sm-2 control-label">Aprendizaje</label>
-								<div class="col-sm-2">
+								<label for="inputDescription" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-0 control-label">Aprendizaje</label>
+								<div class="col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0">
 									<textarea name="aprendizaje" id="aprendizaje" class="form-control" rows="3"></textarea>
 								</div>
 							</div>
 
 							<div class="form-group">  
-								<label for="inputEmail3" class="col-sm-2 control-label">Competencias</label>
-								<div class="col-sm-2 checkbox">  
+								<label for="inputEmail3" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-0  control-label">Competencias</label>
+								<div class="col-sm-4 col-sm-offset-1 col-md-2 col-md-offset-0 checkbox">  
 									<textarea name="competencias" id="competencias" class="form-control" rows="3"></textarea>
 								</div>
 							</div>
