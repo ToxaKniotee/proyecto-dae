@@ -9,13 +9,17 @@ Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem('assets/html');
 $twig = new Twig_Environment($loader);
 
+/* Obtenemos la matricula */
+session_start();
+$matricula = $_SESSION['username'];
+
 /* Nos conectamos a la base de datos */
 include('db_conn.php');
 
 /* Consulta para traer la lista de actividades de este usuario */
-$sql ='SELECT A.Id, A.Tipo, A.Nombre, A.Descripcion, A.Rol, A.Periodo,
+$sql ="SELECT A.Id, A.Tipo, A.Nombre, A.Descripcion, A.Rol, A.Periodo,
 A.AreaImpacto, A.Aprendizajes, A.Competencias FROM Actividades as A, Alumnos
-as U WHERE A.Alumno = U.Matricula';
+as U WHERE A.Alumno = U.Matricula AND U.Matricula = $matricula";
 
 /* Ejecutamos la consulta */
 $result = mysqli_query($conn, $sql);
