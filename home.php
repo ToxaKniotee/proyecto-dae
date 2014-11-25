@@ -20,12 +20,12 @@ as U WHERE A.Alumno = U.Matricula';
 /* Ejecutamos la consulta */
 $result = mysqli_query($conn, $sql);
 
+/* Creamos el array */
+$lis1t = array();
+
 /* Si los resultados no estan vacios entonces los agregamos a un array */
 if (mysqli_num_rows($result) > 0) {
     
-    /* Creamos el array */
-    $list = array();
-
     /* Agregamos las entradas a la lista */
     while ($row = mysqli_fetch_array($result)) {
         $temp_array = array(
