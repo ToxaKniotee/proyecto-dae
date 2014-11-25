@@ -20,6 +20,7 @@
 									<th>Nombre</th>
 									<th></th>
 									<th></th>
+									<th></th>
 								</tr>
 							</thead>
 
@@ -32,6 +33,7 @@
 										<td>{{rev.nombre}}</td>
 										<td><a href="confirmar.php?id={{rev.id}}&action=1&category={{category.id}}">Validar</a></td>
 										<td><a href="confirmar.php?id={{rev.id}}&action=-1&category={{category.id}}">Rechazar</a></td>
+										<td><a data-toggle="modal" href="#myModal{{category.id}}_{{rev.id}}" class="button">Comentarios</a></td>
 									</tr>
 								{% endfor %}
 							</tbody>
