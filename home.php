@@ -21,7 +21,7 @@ as U WHERE A.Alumno = U.Matricula';
 $result = mysqli_query($conn, $sql);
 
 /* Creamos el array */
-$lis1t = array();
+$list = array();
 
 /* Si los resultados no estan vacios entonces los agregamos a un array */
 if (mysqli_num_rows($result) > 0) {
