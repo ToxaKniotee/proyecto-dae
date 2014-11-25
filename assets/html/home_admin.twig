@@ -87,15 +87,19 @@
 			<div  class="centered" class="col-lg-6">
 				<br><br><br>
 
-				<select name="tipo">
-					<option selected>Vista de Reportes</option>
-					<option>Por Alumno</option>
-					<option>Por Generacion</option>
-					<option>Por Estatus</option>
-					<option>Por Actividad/Evento</option>
-					<option>Por Periodo</option>
-					<option>Por Rango/Puntage</option>
-				</select>
+				<form action="generar_reportes.php">
+					<select name="tipo">
+						<option selected>Vista de Reportes</option>
+						<option value="1">Por Alumno</option>
+						<option value="2">Por Generacion</option>
+						<option value="3">Por Estatus</option>
+						<option value="4">Por Actividad/Evento</option>
+						<option value="5">Por Periodo</option>
+						<option value="6">Por Rango/Puntage</option>
+					</select>
+					<input type="submit" value="Generar reportes" />
+				</form>
+
 				<br><br><br><br><br><br>
 			</div><!-- col-lg-6 -->
 
