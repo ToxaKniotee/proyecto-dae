@@ -2873,8 +2873,15 @@ input[type="button"].btn-block {
 }
 .glyphicon-log-out:before {
   content: "\e163";
-  font-size: 35px;
+  padding-top: 55px;
+  font-size: 25px;
   color: #fff;
+}
+
+@media (max-width: 992px) {
+    .glyphicon-log-out:before {     
+        padding-top: 15px;
+    }
 }
 .glyphicon-new-window:before {
   content: "\e164";
