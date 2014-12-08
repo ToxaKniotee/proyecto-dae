@@ -15,36 +15,42 @@ switch ($type) {
     case 1:
         $columns = array('Alumno', 'Id', 'Estado', 'Nombre', 'Descripción', 'Categoría', 'Tipo', 'Rol', 'Periodo', 'Area de impacto', 'Aprendizajes', 'Competencias', 'Puntaje', 'Observaciones');
         $sql = 'SELECT Alumno, Id, Estado, Nombre, Descripcion, Categoria, Tipo, Rol, Periodo, AreaImpacto, Aprendizajes, Competencias, Puntaje, Observaciones FROM Actividades ORDER BY Alumno';
+        $title = 'Alumnos';
         break;
 
     /* Por generación */
     case 2:
         $columns = array('Generación', 'Id', 'Estado', 'Descripción', 'Alumno', 'Categoría', 'Tipo', 'Rol', 'Periodo', 'Area de impacto', 'Aprendizajes', 'Competencias', 'Puntaje', 'Observaciones');
         $sql = 'SELECT U.Generacion, A.Id, A.Estado, A.Descripcion, A.Alumno, A.Categoria, A.Tipo, A.Rol, A.Periodo, A.AreaImpacto, A.Aprendizajes, A.Competencias, A.Puntaje, A.Observaciones FROM Actividades AS A, Alumnos AS U WHERE A.Alumno = U.Matricula ORDER BY U.Generacion';
+        $title = 'Generación';
         break;
 
     /* Por Estatus */
     case 3:
         $columns = array('Estado', 'Id', 'Nombre', 'Descripción', 'Alumno', 'Categoría', 'Tipo', 'Rol', 'Periodo', 'Areade impacto', 'Aprendizajes', 'Competencias', 'Puntaje', 'Observaciones');
         $sql = 'SELECT Estado, Id, Nombre, Descripcion, Alumno, Categoria, Tipo, Rol, Periodo, AreaImpacto, Aprendizajes, Competencias, Puntaje, Observaciones FROM Actividades ORDER BY Estado';
+        $title = 'Estado';
         break;
 
     /* Por actividad */
     case 4:
         $columns = array('Nombre', 'Id', 'Estado', 'Descripción', 'Alumno', 'Categoría', 'Tipo', 'Rol', 'Periodo', 'Area de impacto', 'Aprendizajes', 'Competencias', 'Puntaje', 'Observaciones');
         $sql = 'SELECT Nombre, Id, Estado, Descripcion, Alumno, Categoria, Tipo, Rol, Periodo, AreaImpacto, Aprendizajes, Competencias, Puntaje, Observaciones FROM Actividades ORDER BY Nombre';
+        $title = 'Actividad';
         break;
 
     /* Por periodo */
     case 5:
         $columns = array('Periodo', 'Id', 'Nombre', 'Estado', 'Descripción', 'Alumno', 'Categoría', 'Tipo', 'Rol', 'Area de impacto', 'Aprendizajes', 'Competencias', 'Puntaje', 'Observaciones');
         $sql = 'SELECT Periodo, Id, Nombre, Estado, Descripcion, Alumno, Categoria, Tipo, Rol, AreaImpacto, Aprendizajes, Competencias, Puntaje, Observaciones FROM Actividades ORDER BY Periodo';
+        $title = 'Periodo';
         break;
 
     /* Por rango puntaje */
     case 6:
         $columns = array('Puntaje', 'Id', 'Estado', 'Nombre', 'Descripción', 'Alumno', 'Categoría', 'Tipo', 'Rol', 'Periodo', 'Area de impacto', 'Aprendizajes', 'Competencias', 'Observaciones');
         $sql = 'SELECT Puntaje, Id, Estado, Nombre, Descripcion, Alumno, Categoria, Tipo, Rol, Periodo, AreaImpacto, Aprendizajes, Competencias, Observaciones FROM Actividades ORDER BY Puntaje';
+        $title = 'Puntaje';
         break;
     default:
         echo ('Error');
@@ -60,9 +66,12 @@ $excelWriter->getProperties()->setCreator('DAE CCV')->setLastModifiedBy('DAE CCV
 /* Creamos el index que servira para saber que columna es la que hay que escribir */
 $column_char = 'A';
 
+/* Asignamos el título */
+$excelWriter->setActiveSheetIndex(0)->setCellValue("A1", 'Alumnos');
+
 /* Llenamos los titulos */
 for ($i = 0; $i < count($columns); $i++) {
-    $excelWriter->setActiveSheetIndex(0)->setCellValue($column_char.'1', $columns[$i]);
+    $excelWriter->setActiveSheetIndex(0)->setCellValue($column_char.'3', $columns[$i]);
     $column_char++;
 }
 
@@ -73,7 +82,7 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
 
     /* Creamos desde que fila empezamos a llenar el excel */
-    $row_num = 2;
+    $row_num = 4;
 
     /* Recorremos las filas y vamos llenando los archivos */
     while ($row = mysqli_fetch_array($result)) {
