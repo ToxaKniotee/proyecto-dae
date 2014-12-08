@@ -19,7 +19,7 @@ include('db_conn.php');
 /* Consulta para traer la lista de actividades de este usuario */
 $sql ="SELECT A.Id, A.Tipo, A.Nombre, A.Descripcion, A.Rol, A.Periodo,
 A.AreaImpacto, A.Aprendizajes, A.Competencias FROM Actividades as A, Alumnos
-as U WHERE A.Alumno = U.Matricula AND U.Matricula = $matricula";
+as U WHERE A.Alumno = U.Matricula AND U.Matricula = '$matricula'";
 
 /* Ejecutamos la consulta */
 $result = mysqli_query($conn, $sql);

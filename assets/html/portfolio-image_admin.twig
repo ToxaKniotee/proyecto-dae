@@ -1,11 +1,20 @@
-<div class="col-md-4 ">
+
+<!-- PORTFOLIO TWIG -->
+<div class="col-md-4">
 	<div class="grid mask">
 		<figure>
-			<img class="img-responsive" src="assets/img/portfolio/img_{{category.id}}.png" alt="">
-			<figcaption>
-				<h5>{{category.name}}</h5>
-				<a data-toggle="modal" href="{{category.href}}" class="btn btn-primary btn-lg">{{category.message}}</a>
-			</figcaption><!-- /figcaption -->
+			<div class="recent-work-wrap">
+				<img class="img-responsive" src="assets/img/portfolio/img_{{category.id}}.png" alt="">
+				<a data-toggle="modal" href="{{category.href}}" rel="prettyPhoto">
+					<div class="overlay">
+						<div class="recent-work-inner">
+							<h2 style="color:#fff"><strong>{{category.name}}</strong></h2>
+							{{category.message}}<br>
+							<span class="glyphicon glyphicon-edit" style="font-size:30px; color:#FFF"></span>
+						</div>
+					</div>
+				</a>
+			</div>
 		</figure><!-- /figure -->
 	</div><!-- /grid-mask -->
 </div><!-- /col -->

@@ -62,7 +62,7 @@ $parameters = array(
         ),
         'difusion' => array(
             'id' => 'difusion',
-            'name' => 'Difusión UUAAAUUU',
+            'name' => 'Difusión Social',
             'message' => 'Validar',
             'href' => '#myModaldifusion',
             'rev_wait' => $rev_wait[1]

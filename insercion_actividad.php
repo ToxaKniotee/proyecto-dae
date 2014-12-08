@@ -27,7 +27,7 @@ print("Sentencia SQL: $q <br>");
 
 /* Ejecutamos la sentencia */
 if (mysqli_query($conn, $q)) {
-    echo 'Se Inserto la tabla';
+    header('Location:home.php');
 } else {
     echo 'Error: ' . mysqli_error($conn);
 }
