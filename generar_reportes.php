@@ -69,6 +69,39 @@ $column_char = 'A';
 /* Asignamos el título */
 $excelWriter->setActiveSheetIndex(0)->setCellValue("A1", 'Alumnos');
 
+/* Creamos el estilo del titulo */
+$estiloTituloReporte = array(
+    'font' => array(
+        'name'      => 'Verdana',
+        'bold'      => true,
+        'italic'    => false,
+        'strike'    => false,
+        'size' =>16,
+        'color'     => array(
+            'rgb' => 'FFFFFF'
+        )
+    ),
+    'fill' => array(
+        'type'  => PHPExcel_Style_Fill::FILL_SOLID,
+        'color' => array(
+            'argb' => 'FF220835')
+    ),
+    'borders' => array(
+        'allborders' => array(
+            'style' => PHPExcel_Style_Border::BORDER_NONE
+        )
+    ),
+    'alignment' => array(
+        'horizontal' => PHPExcel_Style_Alignment::HORIZONTAL_CENTER,
+        'vertical' => PHPExcel_Style_Alignment::VERTICAL_CENTER,
+        'rotation' => 0,
+        'wrap' => true
+    )
+);
+
+/* Le asignamos el estilo */
+$excelWriter->getActiveSheet()->getStyle('A1:D1')->applyFromArray($estiloTituloReporte);
+
 /* Llenamos los titulos */
 for ($i = 0; $i < count($columns); $i++) {
     $excelWriter->setActiveSheetIndex(0)->setCellValue($column_char.'3', $columns[$i]);
