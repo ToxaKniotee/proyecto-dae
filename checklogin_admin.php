@@ -10,10 +10,10 @@ include('db_conn.php');
 $q = "SELECT Nomina FROM Administradores WHERE Nomina = '$username' AND Password = '$password'";
 
 /* Ejecutamos la consulta */
-$result = mysqli_query($conn, $q);
+$result = $conn->query($q);
 
 /* Si regreso algun valor, quiere decir que si existe el usuario */
-if (mysqli_num_rows($result) > 0) {
+if ($result->num_rows > 0) {
     $_SESSION["username"] = $username;
     header("location:home_admin.php");
 } else {

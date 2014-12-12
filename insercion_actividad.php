@@ -26,8 +26,8 @@ $q = "INSERT INTO Actividades (Estado, Nombre, Descripcion, Alumno, Categoria, T
 print("Sentencia SQL: $q <br>");
 
 /* Ejecutamos la sentencia */
-if (mysqli_query($conn, $q)) {
+if ($conn->query($q)) {
     header('Location:home.php');
 } else {
-    echo 'Error: ' . mysqli_error($conn);
+    echo 'Error: ';
 }

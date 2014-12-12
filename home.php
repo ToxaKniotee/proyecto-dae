@@ -22,16 +22,16 @@ A.AreaImpacto, A.Aprendizajes, A.Competencias FROM Actividades as A, Alumnos
 as U WHERE A.Alumno = U.Matricula AND U.Matricula = '$matricula'";
 
 /* Ejecutamos la consulta */
-$result = mysqli_query($conn, $sql);
+$result = $conn->query($sql);
 
 /* Creamos el array */
 $list = array();
 
 /* Si los resultados no estan vacios entonces los agregamos a un array */
-if (mysqli_num_rows($result) > 0) {
+if ($result->num_rows > 0) {
     
     /* Agregamos las entradas a la lista */
-    while ($row = mysqli_fetch_array($result)) {
+    while ($row = $result->fetch_array()) {
         $temp_array = array(
             'ID' => $row[0],
             'Tipo' => $row[1],

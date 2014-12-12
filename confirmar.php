@@ -5,5 +5,5 @@ $categoria = $_GET['category'];
 
 include('db_conn.php');
 $sql = "UPDATE Actividades SET Estado = $action WHERE Id = $id";
-$result = mysqli_query($conn, $sql);
+$result = $conn->query($sql);
 header("Location:home_admin.php#myModal$categoria");

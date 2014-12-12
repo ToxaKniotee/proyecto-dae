@@ -6,9 +6,9 @@ session_start();
 $matricula = $_SESSION['username'];
 
 $sql = "SELECT Nombre, Apellido FROM Alumnos WHERE Matricula = '$matricula'";
-$result = mysqli_query($conn, $sql);
-if (mysqli_num_rows($result) > 0) {
-    $row = mysqli_fetch_array($result);
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    $row = $result->fetch_array();
     $nombre = $row[0];
     $apellido = $row[1];
 }

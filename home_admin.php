@@ -31,11 +31,11 @@ for ($i = 0; $i < count($categories); $i++) {
     U.Matricula AND A.Categoria = '$category_name' AND A.Estado = 0";
 
     /* Ejecutamos la sentencia */
-    $result = mysqli_query($conn, $sql);
+    $result = $conn->query($sql);
 
     /* Si encontramos resultados entonces los guardamos en un arreglo y lo agregamos a la lista de esta categoría */
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_array($result)) {
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_array()) {
             $temp_array = array(
                 'id' => $row[0],
                 'alumno' => $row[1],

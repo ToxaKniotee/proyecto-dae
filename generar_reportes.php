@@ -109,16 +109,16 @@ for ($i = 0; $i < count($columns); $i++) {
 }
 
 /* Obtenelos los datos de la base de datos */
-$result = mysqli_query($conn, $sql);
+$result = $conn->query($sql);
 
 /* Checamos si obtuvimos resultados, en caso de que así sea nos ponemos a llenarlos a excel */
-if (mysqli_num_rows($result) > 0) {
+if ($result->num_rows > 0) {
 
     /* Creamos desde que fila empezamos a llenar el excel */
     $row_num = 4;
 
     /* Recorremos las filas y vamos llenando los archivos */
-    while ($row = mysqli_fetch_array($result)) {
+    while ($row = $result->fetch_array()) {
         /* Volvemos a empezar desde la primera columna */
         $column_char = 'A';
 
@@ -147,7 +147,7 @@ $excelWriter->getActiveSheet()->setTitle('Alumnos');
 $excelWriter->setActiveSheetIndex(0);
 
 header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-header('Content-Disposition: attachment;filename="Reportedealumnos.xlsx"');
+header('Content-Disposition: attachment;filename="Reporte de alumnos.xlsx"');
 header('Cache-Control: max-age=0');
  
 $objWriter = PHPExcel_IOFactory::createWriter($excelWriter, 'Excel2007');

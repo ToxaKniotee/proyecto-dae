@@ -11,5 +11,5 @@ $id = $_POST['id'];
 $sql = "UPDATE Actividades SET Observaciones = '$observaciones' WHERE Id = $id";
 
 /* Ejecutamos y recargamos la página */
-$result = mysqli_query($conn, $sql);
+$result = $conn->query($sql);
 header('Location:home_admin.php');
