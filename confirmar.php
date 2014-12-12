@@ -4,6 +4,11 @@ $id = $_GET['id'];
 $categoria = $_GET['category'];
 
 include('db_conn.php');
-$sql = "UPDATE Actividades SET Estado = $action WHERE Id = $id";
-$result = $conn->query($sql);
+
+$stmt = $conn->prepare("UPDATE Actividades SET Estado = ? WHERE Id = ?");
+$stmt->bind_param('ii', $action, $id);
+$stmt->execute();
+
+$result = $stmt->get_result();
+
 header("Location:home_admin.php#myModal$categoria");

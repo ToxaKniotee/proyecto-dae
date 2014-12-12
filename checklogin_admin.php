@@ -6,11 +6,13 @@ $password = $_POST["password"];
 /* Hacemos la conexión a la base de datos */
 include('db_conn.php');
 
-/* Query de la consulta para traer la nomina, al menos se necesita un dato */
-$q = "SELECT Nomina FROM Administradores WHERE Nomina = '$username' AND Password = '$password'";
+/* Query de la consulta para traer la matricula */
+$stmt = $conn->prepare("SELECT Matricula FROM Alumnos WHERE Matricula = ? AND Password = ?");
+$stmt->bind_param('ss', $username, $password);
+$stmt->execute();
 
-/* Ejecutamos la consulta */
-$result = $conn->query($q);
+/* Obtenemos los resultados */
+$result = $stmt->get_result();
 
 /* Si regreso algun valor, quiere decir que si existe el usuario */
 if ($result->num_rows > 0) {

@@ -17,12 +17,14 @@ $matricula = $_SESSION['username'];
 include('db_conn.php');
 
 /* Consulta para traer la lista de actividades de este usuario */
-$sql ="SELECT A.Id, A.Tipo, A.Nombre, A.Descripcion, A.Rol, A.Periodo,
+$stmt = $conn->prepare("SELECT A.Id, A.Tipo, A.Nombre, A.Descripcion, A.Rol, A.Periodo,
 A.AreaImpacto, A.Aprendizajes, A.Competencias FROM Actividades as A, Alumnos
-as U WHERE A.Alumno = U.Matricula AND U.Matricula = '$matricula'";
+as U WHERE A.Alumno = U.Matricula AND U.Matricula = ?");
+$stmt->bind_param('s', $matricula);
+$stmt->execute();
 
 /* Ejecutamos la consulta */
-$result = $conn->query($sql);
+$result = $stmt->get_result();
 
 /* Creamos el array */
 $list = array();

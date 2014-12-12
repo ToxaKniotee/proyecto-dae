@@ -8,8 +8,9 @@ $observaciones = $_POST['observaciones'];
 $id = $_POST['id'];
 
 /* Creamos la sentencia para modificar los comentarios de esa actividad */
-$sql = "UPDATE Actividades SET Observaciones = '$observaciones' WHERE Id = $id";
+$stmt = $conn->prepare("UPDATE Actividades SET Observaciones = ? WHERE Id = ?");
+$stmt->bind_param('si', $observaciones, $id);
 
 /* Ejecutamos y recargamos la página */
-$result = $conn->query($sql);
+$stmt->execute();
 header('Location:home_admin.php');

@@ -7,10 +7,12 @@ $password = $_POST["password"];
 include('db_conn.php');
 
 /* Query de la consulta para traer la matricula */
-$q = "SELECT Matricula FROM Alumnos WHERE Matricula = '$username' AND Password = '$password'";
+$stmt = $conn->prepare("SELECT Matricula FROM Alumnos WHERE Matricula = ? AND Password = ?");
+$stmt->bind_param('ss', $username, $password);
+$stmt->execute();
 
-/* Ejecutamos la consulta */
-$result = $conn->query($q);
+/* Obtenemos los resultados */
+$result = $stmt->get_result();
 
 /* Si regreso algun valor, quiere decir que si existe el usuario */
 if ($result->num_rows > 0) {

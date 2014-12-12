@@ -5,8 +5,11 @@ include('db_conn.php');
 session_start();
 $matricula = $_SESSION['username'];
 
-$sql = "SELECT Nombre, Apellido FROM Alumnos WHERE Matricula = '$matricula'";
-$result = $conn->query($sql);
+$stmt = $conn->prepare("SELECT Nombre, Apellido FROM Alumnos WHERE Matricula = ?");
+$stmt->bind_param('s', $matricula);
+$stmt->execute();
+
+$result = $stmt->get_result();
 if ($result->num_rows > 0) {
     $row = $result->fetch_array();
     $nombre = $row[0];
