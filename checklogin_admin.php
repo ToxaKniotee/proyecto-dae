@@ -11,11 +11,11 @@ $stmt = $conn->prepare("SELECT Matricula FROM Alumnos WHERE Matricula = ? AND Pa
 $stmt->bind_param('ss', $username, $password);
 $stmt->execute();
 
-/* Obtenemos los resultados */
-$result = $stmt->get_result();
+/* Guardamos los resultados */
+$stmt->store_result();
 
 /* Si regreso algun valor, quiere decir que si existe el usuario */
-if ($result->num_rows > 0) {
+if ($stmt->num_rows > 0) {
     $_SESSION["username"] = $username;
     header("location:home_admin.php");
 } else {

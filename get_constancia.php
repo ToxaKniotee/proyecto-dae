@@ -9,11 +9,12 @@ $stmt = $conn->prepare("SELECT Nombre, Apellido FROM Alumnos WHERE Matricula = ?
 $stmt->bind_param('s', $matricula);
 $stmt->execute();
 
-$result = $stmt->get_result();
-if ($result->num_rows > 0) {
-    $row = $result->fetch_array();
-    $nombre = $row[0];
-    $apellido = $row[1];
+/* Guardamos el resultado */
+$stmt->store_result();
+
+if ($stmt->num_rows > 0) {
+    $stmt->bind_result($nombre, $apellido);
+    $stmt->fetch();
 }
 
 /* Incluimos la librería para generar PDFs desde php */

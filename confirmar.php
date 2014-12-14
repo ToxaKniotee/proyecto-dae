@@ -9,6 +9,4 @@ $stmt = $conn->prepare("UPDATE Actividades SET Estado = ? WHERE Id = ?");
 $stmt->bind_param('ii', $action, $id);
 $stmt->execute();
 
-$result = $stmt->get_result();
-
 header("Location:home_admin.php#myModal$categoria");

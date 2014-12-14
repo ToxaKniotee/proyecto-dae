@@ -23,27 +23,30 @@ as U WHERE A.Alumno = U.Matricula AND U.Matricula = ?");
 $stmt->bind_param('s', $matricula);
 $stmt->execute();
 
-/* Ejecutamos la consulta */
-$result = $stmt->get_result();
+/* Guardamos los resultados */
+$stmt->store_result();
 
 /* Creamos el array */
 $list = array();
 
 /* Si los resultados no estan vacios entonces los agregamos a un array */
-if ($result->num_rows > 0) {
+if ($stmt->num_rows > 0) {
     
+    /* Asignamos los parámetros */
+    $stmt->bind_result($id, $tipo, $nombre, $descripcion, $rol, $periodo, $area, $aprendizaje, $competencia);
+
     /* Agregamos las entradas a la lista */
-    while ($row = $result->fetch_array()) {
+    while ($stmt->fetch()) {
         $temp_array = array(
-            'ID' => $row[0],
-            'Tipo' => $row[1],
-            'Nombre' => $row[2],
-            'Descripción' => $row[3],
-            'Rol' => $row[4],
-            'Periodo' => $row[5],
-            'Área' => $row[6],
-            'Aprendizaje' => $row[7],
-            'Competencia' => $row[8]);
+            'ID' => $id,
+            'Tipo' => $tipo,
+            'Nombre' => $nombre,
+            'Descripción' => $descripcion,
+            'Rol' => $rol,
+            'Periodo' => $periodo,
+            'Área' => $area,
+            'Aprendizaje' => $aprendizaje,
+            'Competencia' => $competencia);
         array_push($list, $temp_array);
     }
 }
